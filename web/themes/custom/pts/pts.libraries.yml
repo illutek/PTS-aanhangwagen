@@ -1,0 +1,14 @@
+globalstyle:
+  css:
+    theme:
+      css/styles.css: {}
+
+javascript:
+  js:
+    js/menu.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

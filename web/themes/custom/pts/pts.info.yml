@@ -1,0 +1,14 @@
+name: pts
+type: theme
+discription: "Aanhangwagenbouw theme voor PTS"
+base theme: classy
+package: Custom
+core: 8.x
+version: 1.0.0
+
+libraries:
+  - pts/globalstyle
+  - pts/javascripts
+
+regions:
+  content: Content
