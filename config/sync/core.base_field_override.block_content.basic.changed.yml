@@ -1,0 +1,18 @@
+uuid: d23d6eea-5658-471e-80a4-460805563d36
+langcode: nl
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+id: block_content.basic.changed
+field_name: changed
+entity_type: block_content
+bundle: basic
+label: Gewijzigd
+description: 'Het tijdstip waarop het aangepaste blok voor het laatst is aangepast.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
