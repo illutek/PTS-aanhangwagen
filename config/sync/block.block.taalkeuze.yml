@@ -1,0 +1,20 @@
+uuid: 12d50dd8-e0c5-43ea-8ae2-36f6da3cf923
+langcode: nl
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - bartik
+id: taalkeuze
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: Taalkeuze
+  provider: language
+  label_display: '0'
+visibility: {  }
