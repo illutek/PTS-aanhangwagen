@@ -1,5 +1,5 @@
 uuid: fccf2bbc-b33b-4d0c-be3d-3682500f9025
-langcode: en
+langcode: nl
 status: true
 dependencies:
   module:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_breadcrumb_block
 settings:
   id: system_breadcrumb_block
-  label: Kruimelpad
+  label: Breadcrumbs
   provider: system
   label_display: '0'
 visibility: {  }
