@@ -1,0 +1,4 @@
+name: pts
+recipe: drupal8
+config:
+  webroot: .
