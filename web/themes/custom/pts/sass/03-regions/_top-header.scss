@@ -1,0 +1,23 @@
+// /////////////////////////
+// @@ TOP-HEADER
+// ////////////////////////
+
+.top-header {
+    background-color: $red;
+    height: 6rem;
+    color: $white;
+    font: {
+        size: 2.4rem;
+    };
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+
+    }
+
+    &__right {
+
+    }
+}
