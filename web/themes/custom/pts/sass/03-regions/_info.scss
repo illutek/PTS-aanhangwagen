@@ -1,0 +1,21 @@
+// /////////////////////////
+// @@ INFO
+// ////////////////////////
+
+.info {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+
+    &__news {
+        background-color: $red;
+        padding: 2rem;
+
+    }
+
+    &__aboutus {
+        background-color: $dark-gray;
+        padding: 2rem;
+
+    }
+}
