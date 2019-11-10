@@ -1,0 +1,22 @@
+uuid: 8d4605da-b4be-40ae-9694-1aabcad14852
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pts
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: pts_breadcrumbs
+theme: pts
+region: content
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Kruimelpad
+  provider: system
+  label_display: '0'
+visibility: {  }

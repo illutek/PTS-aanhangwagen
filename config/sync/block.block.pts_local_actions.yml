@@ -1,0 +1,20 @@
+uuid: eb066609-5776-4847-bdac-fa36cb6bf9b2
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - pts
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: pts_local_actions
+theme: pts
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primaire beheeracties'
+  provider: core
+  label_display: '0'
+visibility: {  }

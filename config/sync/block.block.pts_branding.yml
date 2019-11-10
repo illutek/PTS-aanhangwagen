@@ -1,0 +1,25 @@
+uuid: 5d8025b4-eec9-4e25-8b94-c11fe15cfc41
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pts
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: pts_branding
+theme: pts
+region: content
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Branding van de website'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }
