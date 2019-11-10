@@ -1,0 +1,20 @@
+uuid: 9328a459-9ba8-4d21-9609-d6c930947ca3
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - pts
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: pts_page_title
+theme: pts
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Paginatitel
+  provider: core
+  label_display: '0'
+visibility: {  }

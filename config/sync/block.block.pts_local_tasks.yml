@@ -1,0 +1,22 @@
+uuid: b2e8e05e-e474-47c9-ba69-054034769439
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - pts
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: pts_local_tasks
+theme: pts
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabbladen
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -5,6 +5,8 @@ url:
   prefixes:
     nl: nl
     fr: fr
+    en: ''
+    '': null
   domains:
     nl: ''
     fr: ''
