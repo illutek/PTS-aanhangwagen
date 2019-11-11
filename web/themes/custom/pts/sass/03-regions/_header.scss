@@ -1,0 +1,19 @@
+// //////////////////////////////
+// @@ MENU HEADER
+// //////////////////////////////
+
+.header {
+
+  &__logo {
+
+    &-img {
+      width: 45vw;
+      max-width: 19rem;
+      height: auto;
+    }
+  }
+    
+    &__menu {
+      display: none;
+  }
+}

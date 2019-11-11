@@ -1,0 +1,25 @@
+// /////////////////////////
+// @@ TRAILERS
+// ////////////////////////
+
+.trailers {
+    display: flex;
+    flex-direction: column;
+}
+
+.trailer-model {
+    position: relative;
+    margin-bottom: $margin-b;
+
+    &__img {}
+
+    &__caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: $white;
+        padding: 1rem 2rem;
+        background-color: $gray;
+    }
+}
