@@ -12,8 +12,8 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: pts_main_menu
 theme: pts
-region: content
-weight: 0
+region: header
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

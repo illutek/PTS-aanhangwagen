@@ -11,4 +11,11 @@ libraries:
   - pts/javascripts
 
 regions:
+  topheader: "top header"
+  header: Header
+  trailers: Trailers
   content: Content
+  news: News
+  highlighted: Highlighted
+  footerleft: "Footer left"
+  footerright: "Footer right"
