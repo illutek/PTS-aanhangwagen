@@ -131,16 +131,15 @@ strong {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   display: grid;
-  grid-template-columns: 2rem 1fr 2rem;
-  grid-template-rows: 1fr 5fr;
-  grid-template-areas: ". btn ." ". list ."; }
+  grid-template-columns: 5rem 1fr 5rem;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-areas: ". btn ." ". list ." ". social ."; }
   @media screen and (min-width: 62.5em) {
     .menu-overlay {
       display: none; } }
   .menu-overlay__close {
     grid-area: btn;
     text-align: right;
-    padding-right: 3rem;
     padding-top: 8rem; }
   .menu-overlay__list {
     grid-area: list;
@@ -149,6 +148,12 @@ strong {
     text-decoration: none;
     line-height: 4rem;
     color: #eaeaea; }
+  .menu-overlay__social {
+    grid-area: social;
+    justify-self: end; }
+    .menu-overlay__social-icon {
+      width: 3.2rem;
+      height: auto; }
   .menu-overlay--visible {
     opacity: 1;
     right: 0; }
