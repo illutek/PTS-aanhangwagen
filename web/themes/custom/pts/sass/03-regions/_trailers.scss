@@ -3,6 +3,7 @@
 // ////////////////////////
 
 .trailers {
+    margin-bottom: $margin-b;
     display: flex;
     flex-direction: column;
 }
@@ -18,7 +19,6 @@
         left: 0;
         right: 0;
         bottom: 0;
-        color: $white;
         padding: 1rem 2rem;
         background-color: $gray;
     }

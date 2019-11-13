@@ -188,6 +188,7 @@ strong {
     display: none; }
 
 .trailers {
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +205,6 @@ strong {
     left: 0;
     right: 0;
     bottom: 0;
-    color: #eaeaea;
     padding: 1rem 2rem;
     background-color: #6d6e70; }
 
@@ -240,8 +240,7 @@ strong {
     right: 0;
     bottom: 0;
     padding: 1rem 2rem;
-    background-color: #e70103;
-    color: #eaeaea; }
+    background-color: #e70103; }
 
 .footer {
   background-color: #494947;
@@ -324,5 +323,9 @@ strong {
 .social-icon {
   width: 3.2rem;
   height: auto; }
+
+.node-link {
+  color: #eaeaea;
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map */
