@@ -3,11 +3,29 @@
 // ////////////////////////
 
 .highlighted {
-    background-color: $gray;
     margin-bottom: $margin-b;
     padding: 3rem 0;
 
     display: flex;
+
+    &__item {
+        position: relative;
+        margin-bottom: $margin-b;
+    }
+
+    &__img {
+
+    }
+
+    &__caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem 2rem;
+        background-color: $red;
+        color: $white;
+    }
 
 }
 

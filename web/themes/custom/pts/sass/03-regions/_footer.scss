@@ -5,4 +5,25 @@
 .footer {
     background-color: $dark-gray;
     color: $white;
+    padding: 2rem 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left {}
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+
+        &-top {
+
+        }
+
+        &-bottom {
+          float: right;
+        }
+    }
 }
