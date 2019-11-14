@@ -140,7 +140,7 @@ strong {
   .menu-overlay__close {
     grid-area: btn;
     text-align: right;
-    padding-top: 8rem; }
+    padding-top: 3rem; }
   .menu-overlay__list {
     grid-area: list;
     text-align: center; }
@@ -256,7 +256,8 @@ strong {
     flex-direction: column; }
   .footer__left {
     position: relative;
-    padding-bottom: 2rem; }
+    padding: 2rem 0;
+    margin-bottom: 3rem; }
     .footer__left::after {
       position: absolute;
       content: "";
@@ -266,6 +267,7 @@ strong {
       left: 0;
       bottom: 0; }
   .footer__right {
+    padding: 2rem 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,8 +275,6 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .footer__right-bottom {
-      float: right; }
 
 .hamburger-btn {
   height: 4rem;
@@ -283,7 +283,6 @@ strong {
   text-align: center;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
-  margin-top: -1.6rem;
   cursor: pointer; }
   .hamburger-btn--open {
     position: relative;
@@ -324,16 +323,15 @@ strong {
       -webkit-transform: rotate(135deg);
       transform: rotate(135deg);
       top: 1rem;
-      width: 2rem; }
+      width: 3rem; }
     .hamburger-btn--close::after {
       -webkit-transform: rotate(-135deg);
       transform: rotate(-135deg);
       top: 1rem;
-      width: 2rem; }
+      width: 3rem; }
 
 .social-icon {
-  width: 3.2rem;
-  height: auto; }
+  width: 3.2rem; }
 
 .node-link {
   color: #eaeaea;

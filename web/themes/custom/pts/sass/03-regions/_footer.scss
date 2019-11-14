@@ -14,7 +14,8 @@
 
     &__left {
       position: relative;
-      padding-bottom: 2rem;
+      padding: 2rem 0;
+      margin-bottom: $margin-b;
 
       &::after {
         position: absolute;
@@ -30,6 +31,7 @@
     }
 
     &__right {
+        padding: 2rem 0;
         display: flex;
         flex-direction: column;
 
@@ -38,7 +40,7 @@
         }
 
         &-bottom {
-          float: right;
+        //   float: right;
         }
     }
 }
