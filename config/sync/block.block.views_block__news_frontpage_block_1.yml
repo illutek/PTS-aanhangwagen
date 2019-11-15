@@ -1,0 +1,24 @@
+uuid: 019ccc75-330e-44f2-8bfe-a532c57c8787
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.news_frontpage
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__news_frontpage_block_1
+theme: pts
+region: news
+weight: 0
+provider: null
+plugin: 'views_block:news_frontpage-block_1'
+settings:
+  id: 'views_block:news_frontpage-block_1'
+  label: Nieuws
+  provider: views
+  label_display: visible
+  views_label: Nieuws
+  items_per_page: none
+visibility: {  }

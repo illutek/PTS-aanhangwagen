@@ -275,6 +275,9 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .footer__right-bottom {
+      position: relative;
+      padding: 2rem 0; }
 
 .hamburger-btn {
   height: 4rem;
@@ -332,6 +335,9 @@ strong {
 
 .social-icon {
   width: 3.2rem; }
+  .social-icon--footer {
+    position: absolute;
+    right: 0; }
 
 .node-link {
   color: #eaeaea;

@@ -31,16 +31,16 @@
     }
 
     &__right {
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+
+      &-top {
+      }
+
+      &-bottom {
+        position: relative;
         padding: 2rem 0;
-        display: flex;
-        flex-direction: column;
-
-        &-top {
-
-        }
-
-        &-bottom {
-        //   float: right;
-        }
+      }
     }
 }
