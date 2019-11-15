@@ -1,0 +1,22 @@
+uuid: c32348eb-a742-4a35-8d81-a2c51d7b15ab
+langcode: nl
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - pts
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: pts_search
+theme: pts
+region: topheader
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Zoeken
+  provider: search
+  label_display: visible
+visibility: {  }

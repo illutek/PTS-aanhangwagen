@@ -1,0 +1,22 @@
+uuid: c3710820-c82d-49b0-9992-3f73238b259f
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pts
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: pts_messages
+theme: pts
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusberichten
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: d6432e8c-0cb7-422e-8486-9e688216ba7e
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pts
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: pts_powered
+theme: pts
+region: topheader
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Gebouwd met Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

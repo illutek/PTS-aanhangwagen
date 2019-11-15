@@ -1,0 +1,22 @@
+uuid: df12abfa-a10b-435e-b089-d3619e4f0444
+langcode: nl
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pts
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: pts_content
+theme: pts
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primaire inhoud van de pagina'
+  provider: system
+  label_display: '0'
+visibility: {  }
