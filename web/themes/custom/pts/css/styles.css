@@ -155,7 +155,7 @@ strong {
     opacity: 1;
     right: 0; }
 
-.top-header {
+.r-top-header {
   background-color: #e70103;
   padding: 0 1rem;
   height: 6rem;
@@ -332,6 +332,17 @@ strong {
       transform: rotate(-135deg);
       top: 1rem;
       width: 3rem; }
+
+.c-phone--mobile {
+  border: 1px solid #eaeaea;
+  padding: 1rem; }
+
+.c-phone-link {
+  text-decoration: none;
+  color: #eaeaea; }
+
+.c-phone--desktop {
+  display: none; }
 
 .social-icon {
   width: 3.2rem; }

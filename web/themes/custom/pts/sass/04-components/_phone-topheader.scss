@@ -1,0 +1,20 @@
+// //////////////////////////////
+// @@ PHONE TOP-HEADER 
+// //////////////////////////////
+
+.c-phone {
+
+  &--mobile {
+    border: 1px solid $white;
+    padding: 1rem;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}

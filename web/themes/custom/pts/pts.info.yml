@@ -11,7 +11,8 @@ libraries:
   - pts/javascripts
 
 regions:
-  topheader: "top header"
+  topheaderleft: "Top header left"
+  languageselector: "Language selector"
   header: Header
   trailers: Trailers
   content: Content
