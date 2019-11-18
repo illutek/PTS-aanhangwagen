@@ -1,5 +1,3 @@
-label: 'Terme de taxonomie'
-description: 'Contenu associé à un terme de taxonomie donné.'
 display:
   default:
     display_title: Maître
@@ -24,7 +22,5 @@ display:
         tid:
           exception:
             title: Tout
-  feed_1:
-    display_title: Flux
   page_1:
     display_title: Page

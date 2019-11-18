@@ -24,6 +24,7 @@
         "drupal/config_readonly": "^1.0@beta",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/paragraphs": "^1.10",
         "drupal/pathauto": "^1.5",
         "drupal/scheduler": "^1.1",
         "drupal/xmlsitemap": "^1.0@alpha",
