@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: Gy5PaLdfFhtFSRqJxV-DBTF5AocKgNA2CsCNNEbvx4c
 id: taxonomy_term
-label: 'Taxonomy term'
+label: Taxonomieterm
 module: taxonomy
-description: 'Content belonging to a certain taxonomy term.'
+description: 'Inhoud van een bepaalde taxonomieterm'
 tag: default
 base_table: node_field_data
 base_field: nid

@@ -50,10 +50,10 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ previous'
-            next: 'next ›'
-            first: '« first'
-            last: 'last »'
+            previous: '‹ vorige'
+            next: 'volgende ›'
+            first: '« eerste'
+            last: 'laatste »'
       style:
         type: table
         options:
@@ -180,7 +180,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: Action
+          action_title: Actie
           include_exclude: exclude
           selected_actions: {  }
           plugin_id: node_bulk_form
@@ -192,7 +192,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Title
+          label: Titel
           exclude: false
           alter:
             alter_text: false
@@ -239,7 +239,7 @@ display:
           relationship: nid
           group_type: group
           admin_label: ''
-          label: 'Content Type'
+          label: Inhoudstype
           exclude: false
           alter:
             alter_text: false
@@ -304,7 +304,7 @@ display:
           relationship: revision_uid
           group_type: group
           admin_label: ''
-          label: Author
+          label: Auteur
           exclude: false
           alter:
             alter_text: false
@@ -436,7 +436,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Publish on'
+          label: 'Publiceer op'
           exclude: false
           alter:
             alter_text: false
@@ -503,7 +503,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: 'Unpublish on'
+          label: 'Depubliceer op'
           exclude: false
           alter:
             alter_text: false
@@ -667,7 +667,7 @@ display:
           exposed: true
           expose:
             operator_id: title_op
-            label: Title
+            label: Titel
             description: ''
             use_operator: false
             operator: title_op
@@ -708,7 +708,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Inhoudstype
             description: ''
             use_operator: false
             operator: type_op
@@ -763,7 +763,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: 'Published status'
+            label: Publicatiestatus
             description: ''
             identifier: status
             optional: true
@@ -984,7 +984,7 @@ display:
       path: admin/content/scheduled
       menu:
         type: tab
-        title: Scheduled
+        title: Gepland
         description: ''
         expanded: false
         parent: system.admin_content
@@ -1019,7 +1019,7 @@ display:
       path: user/%user/scheduled
       menu:
         type: tab
-        title: Scheduled
+        title: Gepland
         description: ''
         parent: system.admin_content
         weight: -10
