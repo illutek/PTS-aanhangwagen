@@ -7,11 +7,7 @@ display:
           submit_button: Filtrer
           reset_button_label: Réinitialiser
           exposed_sorts_label: 'Trier par'
-          sort_asc_label: Asc
-          sort_desc_label: Desc
       fields:
-        type:
-          separator: ', '
         status:
           settings:
             format_custom_true: Publié
@@ -37,4 +33,3 @@ display:
         title: Contenu
       tab_options:
         title: Contenu
-    display_title: Page

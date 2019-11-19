@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
 id: pts_footer
 theme: pts
-region: topheader
+region: topheaderleft
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

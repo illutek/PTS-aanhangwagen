@@ -1,0 +1,21 @@
+uuid: a2b9ec12-b81f-4869-92a2-3981f3407538
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_sub_trailer
+    - paragraphs.paragraphs_type.sub_trailer
+  module:
+    - text
+id: paragraph.sub_trailer.field_body_sub_trailer
+field_name: field_body_sub_trailer
+entity_type: paragraph
+bundle: sub_trailer
+label: 'Korte beschrijving'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

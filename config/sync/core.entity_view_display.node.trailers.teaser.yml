@@ -1,0 +1,31 @@
+uuid: bdfbf515-4e5a-48da-b815-4b6b3691f2b4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.trailers.body
+    - node.type.trailers
+  module:
+    - text
+    - user
+id: node.trailers.teaser
+targetEntityType: node
+bundle: trailers
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

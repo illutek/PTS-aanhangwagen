@@ -12,7 +12,7 @@ _core:
   default_config_hash: 8a31Ywc1t2zlddGd3bmDrFMefWqgSK2E02ceFdr-bfc
 id: pts_account_menu
 theme: pts
-region: topheader
+region: topheaderleft
 weight: 0
 provider: null
 plugin: 'system_menu_block:account'

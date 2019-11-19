@@ -1,0 +1,22 @@
+uuid: e310152b-9f80-4c4e-8f13-f47e5aa2b13d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.trailers
+id: node.trailers.promote
+field_name: promote
+entity_type: node
+bundle: trailers
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

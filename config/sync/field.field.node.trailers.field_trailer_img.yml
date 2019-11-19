@@ -1,0 +1,38 @@
+uuid: b5921464-2879-4dbc-968b-6748b07ef619
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer_img
+    - node.type.trailers
+  module:
+    - image
+id: node.trailers.field_trailer_img
+field_name: field_trailer_img
+entity_type: node
+bundle: trailers
+label: Afbeelding
+description: 'Mooiste afbeelding van deze soort aanhangwagen, meer foto''s kunnen toegevoegd via paragraphs'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: trailers
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 1200x1000
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

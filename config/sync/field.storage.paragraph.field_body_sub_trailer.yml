@@ -1,0 +1,19 @@
+uuid: 0ab7d605-5970-4a32-9afb-36fba172f92b
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_body_sub_trailer
+field_name: field_body_sub_trailer
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: c8caf4cd-c9b2-44df-8925-c2a76aa738af
+langcode: nl
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sub_trailer
+id: paragraph.sub_trailer.status
+field_name: status
+entity_type: paragraph
+bundle: sub_trailer
+label: Gepubliceerd
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,42 @@
+uuid: 12856856-9678-4589-936d-c78ed07e4a8d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.sub_trailer.field_body_sub_trailer
+    - field.field.paragraph.sub_trailer.field_para_sub_trailer_img
+    - field.field.paragraph.sub_trailer.field_title_sub_trailer
+    - paragraphs.paragraphs_type.sub_trailer
+  module:
+    - image
+    - text
+id: paragraph.sub_trailer.default
+targetEntityType: paragraph
+bundle: sub_trailer
+mode: default
+content:
+  field_body_sub_trailer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_para_sub_trailer_img:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_title_sub_trailer:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

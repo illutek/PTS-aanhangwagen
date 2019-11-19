@@ -1,0 +1,9 @@
+uuid: 99bf247a-480a-4db8-925d-31cb0d3e429a
+langcode: nl
+status: true
+dependencies: {  }
+id: sub_trailer
+label: 'Sub trailer'
+icon_uuid: null
+description: 'Titel, korte beschrijving en afbeeldingen.'
+behavior_plugins: {  }

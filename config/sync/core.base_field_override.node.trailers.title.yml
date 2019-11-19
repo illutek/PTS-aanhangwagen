@@ -1,0 +1,18 @@
+uuid: 9a7a3f4e-a0d6-4f5c-96e6-2cfb367632d9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.trailers
+id: node.trailers.title
+field_name: title
+entity_type: node
+bundle: trailers
+label: 'Aanhangwagen naam'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

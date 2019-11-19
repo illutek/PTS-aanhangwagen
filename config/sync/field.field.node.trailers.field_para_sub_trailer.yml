@@ -1,0 +1,31 @@
+uuid: a8daa726-44ba-4f82-84dd-bdf8b4a148c7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_para_sub_trailer
+    - node.type.trailers
+    - paragraphs.paragraphs_type.sub_trailer
+  module:
+    - entity_reference_revisions
+id: node.trailers.field_para_sub_trailer
+field_name: field_para_sub_trailer
+entity_type: node
+bundle: trailers
+label: 'Sub aanhangwagen'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sub_trailer: sub_trailer
+    target_bundles_drag_drop:
+      sub_trailer:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

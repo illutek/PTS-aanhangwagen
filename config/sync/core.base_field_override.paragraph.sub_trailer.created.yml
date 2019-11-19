@@ -1,0 +1,18 @@
+uuid: 14ee6f8d-2dc9-4fab-866b-b764f8053d29
+langcode: nl
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.sub_trailer
+id: paragraph.sub_trailer.created
+field_name: created
+entity_type: paragraph
+bundle: sub_trailer
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,6 +1,6 @@
 uuid: 46d70e0a-102e-4f48-8b89-43c9703559b4
 langcode: nl
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,7 +12,7 @@ _core:
   default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
 id: pts_main_menu
 theme: pts
-region: topheader
+region: topheaderleft
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'

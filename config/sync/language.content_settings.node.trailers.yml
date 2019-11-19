@@ -1,0 +1,18 @@
+uuid: d8903ade-dae9-43a3-bce0-72467c48e1c4
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.trailers
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.trailers
+target_entity_type_id: node
+target_bundle: trailers
+default_langcode: site_default
+language_alterable: false
