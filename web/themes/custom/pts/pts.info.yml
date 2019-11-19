@@ -11,6 +11,7 @@ libraries:
   - pts/javascripts
 
 regions:
+  contactoverlay: "Contact overlay"
   topheaderleft: "Top header left"
   languageselector: "Language selector"
   header: Header
