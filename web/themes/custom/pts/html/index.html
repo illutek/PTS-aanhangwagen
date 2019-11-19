@@ -11,21 +11,31 @@
 </head>
 
 <body>
-<div class="contact-overlay">
-  <!-- block-region translatable with custom-block -->
-    <h2>Contact</h2>
-    <p>Luikersteenweg 278a <br>
-      3800 Sint-Truiden
-    </p>
-    <p>011/457895</p>
-    <p>info@pts.be</p>
-    <p>
-      Telefonisch bereikbaar van 9:00 tot 12:00 en van 13:00 tot 18:00
-    </p>
-</div>
+  <div class="r-overlay-contact">
+
+    <div class="r-overlay-contact__inner">
+      <div class="r-overlay-contact__close">
+        <div class="c-hamburger-btn--close close-contact"></div>
+      </div>
+      <div class="r-overlay-contact__body">
+        <!-- block-region translatable with custom-block -->
+        <h2>Contact gegevens</h2>
+        <p>Luikersteenweg 278a <br>
+          3800 Sint-Truiden
+        </p>
+        <p>011/457895</p>
+        <p>info@pts.be</p>
+        <p>
+          Telefonisch bereikbaar van 9:00 tot 12:00 en van 13:00 tot 18:00
+        </p>
+      </div>
+
+    </div>
+
+  </div>
   <div class="menu-overlay">
     <div class="menu-overlay__close">
-      <span class="hamburger-btn--close">&nbsp;</span>
+      <span class="c-hamburger-btn--close close-menu">&nbsp;</span>
     </div>
     <div class="menu-overlay__list">
       <ul>
@@ -51,7 +61,7 @@
       </div>
       <div class="c-phone--desktop">
         <!-- block-region topheader-left translatable -->
-          Telefonisch bereikbaar van 09:00 tot 12:00 en van 13:00 tot 18:00 - 011 235498
+        Telefonisch bereikbaar van 09:00 tot 12:00 en van 13:00 tot 18:00 - 011 235498
       </div>
     </div>
     <div class="r-top-header__right">
@@ -63,11 +73,18 @@
   </region>
   <div class="container">
 
-    <region class="header">
-      <div class="header__logo">
-        <img class="header__logo-img" src="../images/logo.png" alt="">
+    <region class="r-header">
+
+      <!-- Only visible on mobile -->
+      <div class="r-header__contact--mobile open-contact">
+        <img src="../images/btn-contact.png" alt="">
       </div>
-      <div class="header__menu">
+
+      <div class="r-header__logo">
+        <img class="r-header__logo-img" src="../images/logo.png" alt="">
+      </div>
+
+      <div class="r-header__menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Verkoop</a></li>
@@ -78,9 +95,9 @@
       </div>
 
       <!-- Only visible on mobile -->
-      <div class="header__menu--mobile">
-        <div class="hamburger-btn">
-          <span class="hamburger-btn--open">&nbsp;</span>
+      <div class="r-header__menu--mobile">
+        <div class="c-hamburger-btn">
+          <span class="c-hamburger-btn--open">&nbsp;</span>
         </div>
       </div>
 

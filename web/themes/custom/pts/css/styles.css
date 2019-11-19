@@ -155,6 +155,31 @@ strong {
     opacity: 1;
     right: 0; }
 
+.r-overlay-contact {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  z-index: 99;
+  color: #eaeaea;
+  background: #6d6e70;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s; }
+  .r-overlay-contact__close {
+    position: absolute;
+    right: 10%;
+    top: 1rem;
+    background-color: red; }
+  .r-overlay-contact__body {
+    width: 80vw;
+    margin: 20rem auto 0; }
+  .r-overlay-contact--visible {
+    opacity: 1;
+    left: 0; }
+
 .r-top-header {
   background-color: #e70103;
   padding: 0 1rem;
@@ -172,7 +197,7 @@ strong {
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
-.header {
+.r-header {
   margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,11 +205,11 @@ strong {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .header__logo-img {
+  .r-header__logo-img {
     width: 45vw;
     max-width: 19rem;
     height: auto; }
-  .header__menu {
+  .r-header__menu {
     display: none; }
 
 .trailers {
@@ -279,7 +304,7 @@ strong {
       position: relative;
       padding: 2rem 0; }
 
-.hamburger-btn {
+.c-hamburger-btn {
   height: 4rem;
   width: 4rem;
   border: 1px solid #494947;
@@ -287,47 +312,47 @@ strong {
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
   cursor: pointer; }
-  .hamburger-btn--open {
+  .c-hamburger-btn--open {
     position: relative;
     top: -7px;
     -webkit-transform: translateY(2.5rem);
     transform: translateY(2.5rem);
     width: 2rem; }
-    .hamburger-btn--open, .hamburger-btn--open::before, .hamburger-btn--open::after {
+    .c-hamburger-btn--open, .c-hamburger-btn--open::before, .c-hamburger-btn--open::after {
       height: 1px;
       background-color: #6d6e70;
       display: inline-block;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
-    .hamburger-btn--open::before, .hamburger-btn--open::after {
+    .c-hamburger-btn--open::before, .c-hamburger-btn--open::after {
       content: "";
       position: absolute;
       left: 0; }
-    .hamburger-btn--open::before {
+    .c-hamburger-btn--open::before {
       top: -0.6rem;
       width: 2rem; }
-    .hamburger-btn--open::after {
+    .c-hamburger-btn--open::after {
       top: 0.6rem;
       width: 2rem; }
-  .hamburger-btn--close {
+  .c-hamburger-btn--close {
     position: relative;
     width: 0; }
-    .hamburger-btn--close, .hamburger-btn--close::before, .hamburger-btn--close::after {
+    .c-hamburger-btn--close, .c-hamburger-btn--close::before, .c-hamburger-btn--close::after {
       height: 1px;
       background-color: #eaeaea;
       display: inline-block;
       -webkit-transition: all 0.3s;
       transition: all 0.3s; }
-    .hamburger-btn--close::before, .hamburger-btn--close::after {
+    .c-hamburger-btn--close::before, .c-hamburger-btn--close::after {
       content: "";
       position: absolute;
       left: 0; }
-    .hamburger-btn--close::before {
+    .c-hamburger-btn--close::before {
       -webkit-transform: rotate(135deg);
       transform: rotate(135deg);
       top: 1rem;
       width: 3rem; }
-    .hamburger-btn--close::after {
+    .c-hamburger-btn--close::after {
       -webkit-transform: rotate(-135deg);
       transform: rotate(-135deg);
       top: 1rem;
