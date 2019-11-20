@@ -1,4 +1,4 @@
-label: 'Aangeraden op de voorpagina'
+label: 'Promu en page d''accueil'
 settings:
-  on_label: Aan
-  off_label: Uit
+  on_label: Activé
+  off_label: Désactivé

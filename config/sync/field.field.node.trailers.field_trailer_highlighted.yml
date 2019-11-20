@@ -1,0 +1,21 @@
+uuid: b8c15851-2096-4177-959b-9010d095dbd0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer_highlighted
+    - node.type.trailers
+  module:
+    - options
+id: node.trailers.field_trailer_highlighted
+field_name: field_trailer_highlighted
+entity_type: node
+bundle: trailers
+label: Uitgelicht
+description: 'Deze keuze zorgt voor tonen op de frontpagina, enkel de 3 laatst gekozen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

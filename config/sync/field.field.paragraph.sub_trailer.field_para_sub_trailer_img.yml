@@ -12,7 +12,7 @@ field_name: field_para_sub_trailer_img
 entity_type: paragraph
 bundle: sub_trailer
 label: Afbeeldingen
-description: ''
+description: 'Meerdere afbeeldingen kunnen hier toegevoegd (met CTRL)'
 required: false
 translatable: false
 default_value: {  }

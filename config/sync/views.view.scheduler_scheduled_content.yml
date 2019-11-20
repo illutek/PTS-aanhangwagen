@@ -38,10 +38,10 @@ display:
           submit_button: Filter
           reset_button: true
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Sorteren op'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Oplopend
+          sort_desc_label: Aflopend
       pager:
         type: full
         options:
@@ -414,8 +414,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Gepubliceerd
+            format_custom_false: 'Niet gepubliceerd'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -570,7 +570,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Bewerkingen
           exclude: false
           alter:
             alter_text: false
@@ -774,11 +774,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Gepubliceerd
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Niet gepubliceerd'
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -797,7 +797,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Taal
             description: ''
             use_operator: false
             operator: langcode_op
@@ -966,7 +966,7 @@ display:
           2: OR
       display_extenders: {  }
     display_plugin: default
-    display_title: Master
+    display_title: Hoofd
     id: default
     position: 0
     cache_metadata:

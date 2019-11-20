@@ -13,7 +13,7 @@ field_name: field_para_sub_trailer
 entity_type: node
 bundle: trailers
 label: 'Sub aanhangwagen'
-description: ''
+description: 'Voeg hier een sub aanhangwagen toe indien nodig, bij meer dan 1 sub kunnen deze van volgorde gewijzigd worden.'
 required: false
 translatable: true
 default_value: {  }

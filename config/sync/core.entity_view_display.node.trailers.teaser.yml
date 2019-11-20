@@ -28,4 +28,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_para_sub_trailer: true
+  field_trailer_img: true
   langcode: true

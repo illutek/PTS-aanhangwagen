@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.trailers.body
     - field.field.node.trailers.field_para_sub_trailer
+    - field.field.node.trailers.field_trailer_highlighted
     - field.field.node.trailers.field_trailer_img
     - node.type.trailers
   module:
     - entity_reference_revisions
     - image
+    - options
     - text
     - user
 id: node.trailers.default
@@ -32,6 +34,13 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_trailer_highlighted:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_trailer_img:
     weight: 102
