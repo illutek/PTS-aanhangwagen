@@ -8,11 +8,11 @@
   
     const openBtn = document.querySelector('.c-hamburger-btn');
     const openBtnContact = document.querySelector('.open-contact');
-    const closeBtn = document.querySelector('.close-menu');
-    const closeBtnContact = document.querySelector('.close-contact');
-    const menuOverlay = document.querySelector('.menu-overlay');
+    const closeBtn = document.querySelector('.js-close-menu');
+    const closeBtnContact = document.querySelector('.js-close-contact');
+    const menuOverlay = document.querySelector('.r-menu-overlay');
     const contactOverlay = document.querySelector('.r-overlay-contact');
-    const openmenu = document.querySelector('.menu-overlay');
+    const openmenu = document.querySelector('.r-menu-overlay');
   
     // console.log(contactOverlay);
   
@@ -21,7 +21,7 @@
     */
   
     function closeMenu() {
-      menuOverlay.classList.remove('menu-overlay--visible');
+      menuOverlay.classList.remove('r-menu-overlay--visible');
     }
 
     function closeContact() {
@@ -29,7 +29,7 @@
     }
   
     function openMenu() {
-      menuOverlay.classList.toggle('menu-overlay--visible');
+      menuOverlay.classList.toggle('r-menu-overlay--visible');
     }
 
     function openContact() {
