@@ -255,7 +255,11 @@ strong {
   padding: 3rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
   .highlighted__item {
     position: relative;
     margin-bottom: 3rem; }
@@ -266,6 +270,15 @@ strong {
     bottom: 0;
     padding: 1rem 2rem;
     background-color: #e70103; }
+
+.parts {
+  color: #eaeaea; }
+  .parts__inner {
+    background-color: #6d6e70;
+    padding: 4rem;
+    margin-bottom: 3rem; }
+  .parts__body {
+    padding: 1rem 0; }
 
 .footer {
   background-color: #494947;
