@@ -20,7 +20,7 @@
 
     @include mq(tablet) {
         flex-grow: 1;
-        // width: 45%;
+        max-width: 24rem;
     }
 
     &__img {}
