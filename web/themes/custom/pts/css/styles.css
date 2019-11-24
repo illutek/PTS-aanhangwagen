@@ -205,12 +205,22 @@ strong {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  @media screen and (min-width: 37.5em) {
+    .r-header__contact--mobile {
+      display: none; } }
   .r-header__logo-img {
     width: 45vw;
     max-width: 19rem;
     height: auto; }
   .r-header__menu {
-    display: none; }
+    display: none;
+    padding-top: 2rem; }
+    @media screen and (min-width: 37.5em) {
+      .r-header__menu {
+        display: block; } }
+    @media screen and (min-width: 37.5em) {
+      .r-header__menu--mobile {
+        display: none; } }
 
 .trailers {
   margin-bottom: 3rem;
@@ -221,10 +231,26 @@ strong {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media screen and (min-width: 37.5em) {
+    .trailers {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; } }
 
 .trailer-model {
   position: relative;
   margin-bottom: 3rem; }
+  @media screen and (min-width: 37.5em) {
+    .trailer-model {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1; } }
   .trailer-model__caption {
     position: absolute;
     left: 0;
@@ -348,6 +374,25 @@ strong {
       top: 0.6rem;
       width: 2rem; }
 
+.c-main-menu__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.c-main-menu__item:not(:last-child) {
+  padding-right: 1rem; }
+
+.c-main-menu__link {
+  text-decoration: none;
+  color: #12130f; }
+  .c-main-menu__link:hover {
+    color: #494947; }
+
 .c-close-btn {
   position: relative;
   width: 0; }
@@ -375,13 +420,20 @@ strong {
 .c-phone--mobile {
   border: 1px solid #eaeaea;
   padding: 1rem; }
+  @media screen and (min-width: 37.5em) {
+    .c-phone--mobile {
+      display: none; } }
 
 .c-phone-link {
   text-decoration: none;
   color: #eaeaea; }
 
 .c-phone--desktop {
-  display: none; }
+  display: none;
+  font-size: 1.6rem; }
+  @media screen and (min-width: 37.5em) {
+    .c-phone--desktop {
+      display: block; } }
 
 .social-icon {
   width: 3.2rem; }

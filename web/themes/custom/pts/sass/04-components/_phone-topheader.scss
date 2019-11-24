@@ -7,6 +7,10 @@
   &--mobile {
     border: 1px solid $white;
     padding: 1rem;
+
+    @include mq(tablet){
+      display: none;
+    }
   }
 
   &-link {
@@ -16,5 +20,12 @@
 
   &--desktop {
     display: none;
+    font: {
+      size: 1.6rem;
+    };
+
+    @include mq(tablet) {
+      display: block;
+    }
   }
 }

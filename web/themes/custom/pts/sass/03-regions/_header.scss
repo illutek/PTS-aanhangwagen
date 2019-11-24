@@ -10,7 +10,9 @@
   &__contact {
 
     &--mobile {
-      
+      @include mq(tablet) {
+        display: none;
+      }
     }
   }
 
@@ -25,6 +27,19 @@
     
   &__menu {
     display: none;
+    padding-top: 2rem;
+
+    @include mq(tablet) {
+      display: block;
+    }
+
+    &--mobile {
+
+      @include mq(tablet) {
+        display: none;
+      }
+
+    }
   }
 
 }

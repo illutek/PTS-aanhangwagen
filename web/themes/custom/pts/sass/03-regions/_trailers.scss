@@ -6,11 +6,22 @@
     margin-bottom: $margin-b;
     display: flex;
     flex-direction: column;
+
+    @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 
 .trailer-model {
     position: relative;
     margin-bottom: $margin-b;
+
+    @include mq(tablet) {
+        flex-grow: 1;
+        // width: 45%;
+    }
 
     &__img {}
 

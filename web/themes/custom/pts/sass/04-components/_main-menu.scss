@@ -1,0 +1,28 @@
+// //////////////////////////////
+// @@ MAIN MENU
+// //////////////////////////////
+
+.c-main-menu {
+
+    &__items {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+    }
+
+    &__item {
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+            color: $dark-gray;
+        }
+    }
+}
