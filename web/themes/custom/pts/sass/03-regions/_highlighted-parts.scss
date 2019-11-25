@@ -1,0 +1,15 @@
+// /////////////////////////
+// @@ HIGHLIGHTED PARTS
+// ////////////////////////
+
+// region on frontpage = wrapper for highlighted and parts
+
+.highlghted-parts {
+
+    @include mq(tablet) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 2rem;
+        align-items: start;
+    }
+}
