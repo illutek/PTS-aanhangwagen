@@ -2,8 +2,9 @@
 // @@ INFO
 // ////////////////////////
 
-.info {
+.r-info {
     color: $white;
+    // position: relative;
     margin-bottom: $margin-b;
     display: flex;
     flex-direction: column;
@@ -12,16 +13,38 @@
         flex-direction: row;
     }
 
+    &__img {
+        width: 50%;
+        max-width: 25rem;
+        float: left;
+        margin-right: 1rem;
+    }
+
 
     &__news {
         background-color: $red;
         padding: 2rem;
 
+        &--desktop {
+            height: 100%;
+            @include mq(desktop) {
+                margin-left: 10%;
+            }
+        }
+
     }
 
     &__aboutus {
+        position: relative;
         background-color: $dark-gray;
         padding: 2rem;
+
+        &--desktop {
+            // position: relative;
+            @include mq(desktop) {
+                margin-right: 10vw;
+            }
+        }
 
     }
 }

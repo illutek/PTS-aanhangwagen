@@ -6,6 +6,7 @@
   color: $white;
  
   &__inner {
+    position: relative;
     background-color: $gray;
     padding: 4rem;
     margin-bottom: $margin-b;

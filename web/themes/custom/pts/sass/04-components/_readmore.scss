@@ -1,0 +1,15 @@
+// /////////////////////////
+// @@ READMORE
+// ////////////////////////
+
+.c-readmore {
+    text-decoration: none;
+    cursor: pointer;
+    // position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+
+    &--white {
+        color: $white;
+    }
+}
