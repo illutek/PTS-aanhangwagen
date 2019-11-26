@@ -5,6 +5,10 @@
 .c-language {
     &__items {
         display: flex;
+
+        & .is-active {
+            border-bottom: 1px solid $white;
+        }
     }
     &__item {
         &:not(:last-child) {

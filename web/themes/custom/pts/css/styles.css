@@ -377,6 +377,8 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  .c-language__items .is-active {
+    border-bottom: 1px solid #eaeaea; }
 
 .c-language__item:not(:last-child) {
   padding-right: 1.6rem; }
