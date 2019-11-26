@@ -144,7 +144,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: News_frontpage
+      title: Nieuws
       header: {  }
       footer: {  }
       empty:

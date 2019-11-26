@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      empty:
+        area_text_custom:
+          content: 'Aucune nouvelle pour le moment.'
+      title: Actualités
+    display_title: Actualités
