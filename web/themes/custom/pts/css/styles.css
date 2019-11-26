@@ -477,6 +477,8 @@ strong {
 .c-phone--desktop {
   display: none;
   font-size: 1.6rem; }
+  .c-phone--desktop p {
+    margin-bottom: 0; }
   @media screen and (min-width: 37.5em) {
     .c-phone--desktop {
       display: block; } }

@@ -1,0 +1,25 @@
+uuid: daa5ab74-64a5-4a67-a051-a2bcb71e7c17
+langcode: nl
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ad556456-969c-4555-99a1-9a62e38ad59b'
+  module:
+    - block_content
+  theme:
+    - pts
+id: topheadercontact
+theme: pts
+region: topheaderleft
+weight: 0
+provider: null
+plugin: 'block_content:ad556456-969c-4555-99a1-9a62e38ad59b'
+settings:
+  id: 'block_content:ad556456-969c-4555-99a1-9a62e38ad59b'
+  label: 'Top header contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -24,6 +24,10 @@
       size: 1.6rem;
     };
 
+    p {
+      margin-bottom: 0;
+    }
+
     @include mq(tablet) {
       display: block;
     }
