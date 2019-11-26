@@ -1,0 +1,19 @@
+// /////////////////////////
+// @@ LANGUAGE LINKS
+// ////////////////////////
+
+.c-language {
+    &__items {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            padding-right: 1.6rem;
+        }
+    }
+}
+
+.language-link {
+    text-decoration: none;
+    color: $white;
+}

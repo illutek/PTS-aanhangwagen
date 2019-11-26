@@ -18,6 +18,7 @@
 
     <div class="r-overlay-contact__body">
       {# block-region translatable with custom-block #}
+      region contatc gegevens
         {{ page.contactoverlay}}
     </div>
 
@@ -41,7 +42,7 @@
   </div>
   <div class="r-menu-overlay__social">
     <a href="https://www.facebook.com/pts.be/">
-      <img  class="social-icon" src="{{ base_path ~ directory }}/images/facebook-icon.png.png" alt="Facebook icon" />
+      <img  class="social-icon" src="{{ base_path ~ directory }}/images/facebook-icon.png" alt="Facebook icon" />
     </a>
   </div>
 
@@ -57,6 +58,7 @@
     </div>
     <div class="c-phone--desktop">
       <!-- block-region topheader-left translatable -->
+      openingsuren en tel desktop
       {{ page.topheaderleft }}
     </div>
   </div>
@@ -103,8 +105,35 @@
         </div>
       </div>
 
-    </region>
+  </region>
     {# end region r-header #}
+
+{# start region trailers #}
+  <region class="trailers">
+    {{ page.trailers }}
+    Region trailers
+  </region>
+  {# end region trailers #}
 
 </div>
 {# end container #}
+
+{# start region r-info contains news and aboutus #}
+
+<region class="r-info">
+    <div class="r-info__news">
+      <!-- block-region news translatable -->
+      <div class="r-info__news--desktop">
+        {{ page.news }}
+      </div>
+
+    </div>
+    <div class="r-info__aboutus">
+      <!-- block-region content translatable -->
+      <div class="r-info__aboutus--desktop">
+        <h2>Over ons</h2>
+        {{ page.aboutus }}
+      </div>
+    </div>
+  </region>
+  {# end region r-info #}
