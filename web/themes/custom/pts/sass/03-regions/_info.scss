@@ -25,8 +25,13 @@
         background-color: $red;
         padding: 2rem;
 
+        @include mq(tablet){
+            width: 50vw;
+        }
+
         &--desktop {
             height: 100%;
+           
             @include mq(desktop) {
                 margin-left: 10%;
             }
@@ -39,8 +44,12 @@
         background-color: $dark-gray;
         padding: 2rem;
 
+        @include mq(tablet){
+            width: 50vw;
+        }
+
         &--desktop {
-            // position: relative;
+           
             @include mq(desktop) {
                 margin-right: 10vw;
             }

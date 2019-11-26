@@ -20,5 +20,6 @@ regions:
   news: News
   aboutus: "About us"
   highlighted: Highlighted
+  parts: Onderdelen
   footerleft: "Footer left"
   footerright: "Footer right"

@@ -284,6 +284,9 @@ strong {
   .r-info__news {
     background-color: #e70103;
     padding: 2rem; }
+    @media screen and (min-width: 37.5em) {
+      .r-info__news {
+        width: 50vw; } }
     .r-info__news--desktop {
       height: 100%; }
       @media screen and (min-width: 62.5em) {
@@ -293,6 +296,9 @@ strong {
     position: relative;
     background-color: #494947;
     padding: 2rem; }
+    @media screen and (min-width: 37.5em) {
+      .r-info__aboutus {
+        width: 50vw; } }
     @media screen and (min-width: 62.5em) {
       .r-info__aboutus--desktop {
         margin-right: 10vw; } }

@@ -137,3 +137,52 @@
     </div>
   </region>
   {# end region r-info #}
+
+{# start container highlighted and parts #}
+ <div class="container">
+
+  <region class="highlghted-parts">
+
+    <div class="highlighted">
+      <h2>Uitgelicht</h2>
+      {{ page.highlighted }}
+    </div>
+    {# <!-- end highlighted --> #}
+
+    <div class="parts">
+      <div class="parts__inner">
+        <h2>Onderdelen</h2>
+         {{ page.parts }}
+      </div>
+    </div>
+    {# end parts #}
+
+  </region>
+  {# end region highlighted-parts #}
+
+</div>
+{# end container  #}
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+           {{ page.footerleft }}
+        </div> <!-- end footer__left -->
+
+        <div class="footer__right">
+          <div class="footer__right-top">
+             {{ page.footerright }}
+          </div>
+          <div class="footer__right-bottom">
+            <a href="https://www.facebook.com/pts.be/">
+              <img class="social-icon social-icon--footer" src="{{ base_path ~ directory }}/images/facebook-icon.png" alt="">
+            </a>
+          </div>
+
+        </div> <!-- end footer__right -->
+      </div> <!-- end footer__inner -->
+
+    </div> <!-- end container in footer -->
+
+  </footer>
