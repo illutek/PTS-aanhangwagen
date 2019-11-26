@@ -1,5 +1,5 @@
 // //////////////////////////////
-// @@ MENU OVERLAY
+// @@ MENU OVERLAY REGION
 // //////////////////////////////
 
 .r-menu-overlay {
@@ -37,12 +37,6 @@
   &__list {
     grid-area: list;
     text-align: center;
-  }
-
-  &__link {
-    text-decoration: none;
-    line-height: 4rem;
-    color: $white;
   }
 
   &__social {

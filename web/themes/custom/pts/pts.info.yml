@@ -12,9 +12,11 @@ libraries:
 
 regions:
   contactoverlay: "Contact overlay"
+  mobilemenu: "Mobiel menu"
   topheaderleft: "Top header left"
   languageselector: "Language selector"
   header: Header
+  headermenu: "Header Menu"
   trailers: Trailers
   content: Content
   news: News

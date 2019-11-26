@@ -144,10 +144,6 @@ strong {
   .r-menu-overlay__list {
     grid-area: list;
     text-align: center; }
-  .r-menu-overlay__link {
-    text-decoration: none;
-    line-height: 4rem;
-    color: #eaeaea; }
   .r-menu-overlay__social {
     grid-area: social;
     justify-self: end; }
@@ -420,6 +416,15 @@ strong {
       top: 0.6rem;
       width: 2rem; }
 
+.c-menu-overlay__item {
+  font-size: 4rem;
+  line-height: 6rem; }
+
+.c-menu-overlay__link {
+  text-decoration: none;
+  line-height: 4rem;
+  color: #eaeaea; }
+
 .c-main-menu__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -438,6 +443,9 @@ strong {
   color: #12130f; }
   .c-main-menu__link:hover {
     color: #494947; }
+
+.is-active {
+  border-bottom: 1px solid #6d6e70; }
 
 .c-close-btn {
   position: relative;

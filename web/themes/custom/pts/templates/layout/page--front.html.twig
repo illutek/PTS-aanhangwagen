@@ -32,13 +32,7 @@
       <span class="c-close-btn">&nbsp;</span>
   </div>
   <div class="r-menu-overlay__list">
-    <ul>
-      <li><a class="r-menu-overlay__link" href="{{ path('<front>') }}">Home</a></li>
-      <li><a href="{{ base_path}}#" class="r-menu-overlay__link">Verkoop</a></li>
-      <li><a href="{{ base_path}}#" class="r-menu-overlay__link">Verhuur</a></li>
-      <li><a href="{{ base_path}}#" class="r-menu-overlay__link">Tweedehands</a></li>
-      <li><a href="{{ base_path}}#" class="r-menu-overlay__link">Onderdelen</a></li>
-    </ul>
+   {{ page.mobilemenu }}
   </div>
   <div class="r-menu-overlay__social">
     <a href="https://www.facebook.com/pts.be/">
@@ -87,14 +81,7 @@
     
     {# convert to main-menu #}
       <div class="r-header__menu">
-        <ul class="c-main-menu__items">
-          <li class="c-main-menu__item">
-            <a class="c-main-menu__link" href="{{ path('<front>') }}"#>Home</a>
-          </li>
-          <li class="c-main-menu__item"><a class="c-main-menu__link" href="{{ base_path}}"#>Verkoop</a></li>
-          <li class="c-main-menu__item"><a class="c-main-menu__link" href="{{ base_path}}"#>Verhuur</a></li>
-          <li class="c-main-menu__item"><a class="c-main-menu__link" href="{{ base_path}}"#>Tweedehands</a></li>
-        </ul>
+        {{ page.headermenu }}
       </div>
 
       {# Only visible on mobile menu-btn #}

@@ -1,6 +1,6 @@
-uuid: 46d70e0a-102e-4f48-8b89-43c9703559b4
+uuid: f15512ae-e004-4fa9-9baf-0fc9ec68541f
 langcode: nl
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -8,12 +8,10 @@ dependencies:
     - system
   theme:
     - pts
-_core:
-  default_config_hash: ChCx7DYNUrPTt5uiRdQAPDKJQMc-_SyAQTrZh8H0o-c
-id: pts_main_menu
+id: hoofdnavigatie
 theme: pts
-region: headermenu
-weight: -7
+region: mobilemenu
+weight: -8
 provider: null
 plugin: 'system_menu_block:main'
 settings:
@@ -22,6 +20,6 @@ settings:
   provider: system
   label_display: '0'
   level: 1
-  depth: 1
+  depth: 0
   expand_all_items: false
 visibility: {  }
