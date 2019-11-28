@@ -1,0 +1,24 @@
+uuid: 7ed69984-00c2-47ca-813b-3e71f5d01e36
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.contact
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__contact_block_1
+theme: pts
+region: contactoverlay
+weight: 0
+provider: null
+plugin: 'views_block:contact-block_1'
+settings:
+  id: 'views_block:contact-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

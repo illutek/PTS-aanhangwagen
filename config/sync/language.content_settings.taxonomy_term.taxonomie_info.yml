@@ -1,0 +1,11 @@
+uuid: aa2030df-a1f4-472a-ac8c-3cea97204963
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxonomie_info
+id: taxonomy_term.taxonomie_info
+target_entity_type_id: taxonomy_term
+target_bundle: taxonomie_info
+default_langcode: site_default
+language_alterable: false

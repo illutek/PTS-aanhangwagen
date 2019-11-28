@@ -1,0 +1,8 @@
+uuid: fce2b5af-e232-4058-948c-a6d16a01624c
+langcode: nl
+status: true
+dependencies: {  }
+name: 'Soort info'
+vid: taxonomie_info
+description: ''
+weight: 0

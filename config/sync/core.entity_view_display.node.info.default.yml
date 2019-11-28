@@ -1,0 +1,38 @@
+uuid: 704cf75c-7e9c-4d34-96dc-4dba58fdc126
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.info.body
+    - field.field.node.info.field_type_info
+    - node.type.info
+  module:
+    - text
+    - user
+id: node.info.default
+targetEntityType: node
+bundle: info
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_type_info:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

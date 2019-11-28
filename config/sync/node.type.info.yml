@@ -1,0 +1,30 @@
+uuid: 385289e6-089a-4abc-9c7c-6b6b89c3b7fe
+langcode: nl
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+name: Info
+type: info
+description: 'Informatie, dit zijn de contactgegevens en openingsuren tot op heden, gefilterd via taxonomie.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false
