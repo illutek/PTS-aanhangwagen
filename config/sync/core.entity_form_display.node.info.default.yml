@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.info.body
-    - field.field.node.info.field_type_info
+    - field.field.node.info.field_typof_info
     - node.type.info
   module:
     - path
@@ -30,7 +30,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_type_info:
+  field_typof_info:
     weight: 122
     settings: {  }
     third_party_settings: {  }

@@ -1,0 +1,21 @@
+uuid: 1539d181-bd5b-42fb-b300-6408a7e4078f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typof_info
+    - node.type.info
+  module:
+    - options
+id: node.info.field_typof_info
+field_name: field_typof_info
+entity_type: node
+bundle: info
+label: 'Soort info'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

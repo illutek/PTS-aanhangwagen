@@ -29,5 +29,6 @@ content:
     region: content
 hidden:
   field_para_sub_trailer: true
+  field_trailer_highlighted: true
   field_trailer_img: true
   langcode: true

@@ -5,12 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - node.type.info
-    - taxonomy.vocabulary.taxonomie_info
-  content:
-    - 'taxonomy_term:taxonomie_info:b332b011-a811-4898-9821-f72f0f1062e1'
   module:
     - node
-    - taxonomy
+    - options
     - user
 id: contact
 label: Contact
@@ -132,16 +129,16 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
+        field_typof_info_value:
+          id: field_typof_info_value
+          table: node__field_typof_info
+          field: field_typof_info_value
           relationship: none
           group_type: group
           admin_label: ''
           operator: or
           value:
-            1: 1
+            contact: contact
           group: 1
           exposed: false
           expose:
@@ -170,12 +167,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           reduce_duplicates: false
-          type: select
-          limit: true
-          vid: taxonomie_info
-          hierarchy: false
-          error_message: true
-          plugin_id: taxonomy_index_tid
+          plugin_id: list_field
       sorts:
         created:
           id: created
@@ -204,7 +196,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -221,7 +212,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

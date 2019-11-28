@@ -1,0 +1,27 @@
+uuid: 7649e409-c73b-4c4d-a74b-d591a61b0bb7
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_typof_info
+field_name: field_typof_info
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: contact
+      label: Contact
+    -
+      value: open
+      label: Openingsuren
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
