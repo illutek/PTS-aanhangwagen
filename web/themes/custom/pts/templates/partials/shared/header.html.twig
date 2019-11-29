@@ -8,24 +8,26 @@
 <region class="r-header">
 
     {# Only visible on mobile contact-btn #}
-    <div class="r-header__contact--mobile open-contact">
-      <img src="{{ base_path ~ directory  }}/images/btn-contact.png" alt="Contact knop">
-    </div>
+  <div class="r-header__contact--mobile open-contact">
+    <img src="{{ base_path ~ directory  }}/images/btn-contact.png" alt="Contact knop">
+  </div>
 
-    <div class="r-header__logo">
+  <div class="r-header__logo">
+    <a href="{{ path('<front>') }}">
       <img class="r-header__logo-img" src="{{ base_path ~ directory }}/images/logo.png" alt="Logo PTS-aanhangwagenbouw">
-    </div>
+     </a>
+  </div>
     
     {# convert to main-menu #}
-      <div class="r-header__menu">
-        {{ page.headermenu }}
-      </div>
+    <div class="r-header__menu">
+      {{ page.headermenu }}
+    </div>
 
       {# Only visible on mobile menu-btn #}
-      <div class="r-header__menu--mobile">
-        <div class="c-hamburger-btn">
-          <span class="c-hamburger-btn--open">&nbsp;</span>
-        </div>
+    <div class="r-header__menu--mobile">
+      <div class="c-hamburger-btn">
+        <span class="c-hamburger-btn--open">&nbsp;</span>
       </div>
+    </div>
 
-  </region>
+</region>
