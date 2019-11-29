@@ -24,7 +24,15 @@
   {% include directory ~ '/templates/partials/shared/header.html.twig' %}
   {# end region r-header #}
 
-  {{ page.content }}
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="page-content">
+      {{ page.content }}
+    </div>
+    {# /.page-content #}
+
+  </main>
   
 </div>
 {# end container  #}

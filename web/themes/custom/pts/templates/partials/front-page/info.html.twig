@@ -1,0 +1,25 @@
+{# 
+/**
+* 29-11-2019
+* info region = news and aboutus teasers
+*/
+#}
+
+<region class="r-info">
+
+  <div class="r-info__news">
+    <!-- block-region news translatable -->
+    <div class="r-info__news--desktop">
+      {{ page.news }}
+    </div>
+
+  </div>
+  <div class="r-info__aboutus">
+    <!-- block-region content translatable -->
+    <div class="r-info__aboutus--desktop">
+      <h2>Over ons</h2>
+        {{ page.aboutus }}
+      </div>
+    </div>
+    
+</region>

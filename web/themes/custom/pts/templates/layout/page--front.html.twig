@@ -19,67 +19,29 @@
 {% include directory ~ '/templates/partials/shared/top-header.html.twig' %}
 {# end region r-top-header #}
 
+{# start container #}
 <div class="container">
-{# regions r-header and trailer region #}
+  {# regions r-header and trailer region #}
 
-  {# start region r-header #}
-  {% include directory ~ '/templates/partials/shared/header.html.twig' %}
-  {# end region r-header #}
+    {# start region r-header #}
+    {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+    {# end region r-header #}
 
-{# start region trailers #}
-  <region class="trailers">
-    {{ page.trailers }}
-    Region trailers
-  </region>
-  {# end region trailers #}
+    {# start region trailers #}
+    {% include directory ~ '/templates/partials/front-page/trailers.html.twig' %}
+    {# end region trailers #}
 
+  {# end regions r-header and trailer region #}
 </div>
 {# end container #}
 
 {# start region r-info contains news and aboutus #}
-
-<region class="r-info">
-    <div class="r-info__news">
-      <!-- block-region news translatable -->
-      <div class="r-info__news--desktop">
-        {{ page.news }}
-      </div>
-
-    </div>
-    <div class="r-info__aboutus">
-      <!-- block-region content translatable -->
-      <div class="r-info__aboutus--desktop">
-        <h2>Over ons</h2>
-        {{ page.aboutus }}
-      </div>
-    </div>
-  </region>
-  {# end region r-info #}
+{% include directory ~ '/templates/partials/front-page/info.html.twig' %}
+{# end region r-info #}
 
 {# start container highlighted and parts #}
- <div class="container">
-
-  <region class="highlghted-parts">
-
-    <div class="highlighted">
-      <h2>Uitgelicht</h2>
-      {{ page.highlighted }}
-    </div>
-    {# <!-- end highlighted --> #}
-
-    <div class="parts">
-      <div class="parts__inner">
-        <h2>Onderdelen</h2>
-         {{ page.parts }}
-      </div>
-    </div>
-    {# end parts #}
-
-  </region>
-  {# end region highlighted-parts #}
-
-</div>
-{# end container  #}
+{% include directory ~ '/templates/partials/front-page/highlighted-parts.html.twig' %}
+{# end container highlighted and parts #}
 
 {# begin footer #}
 {% include directory ~ '/templates/partials/shared/footer.html.twig' %}
