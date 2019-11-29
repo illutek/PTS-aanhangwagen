@@ -341,6 +341,9 @@ strong {
   .parts__body {
     padding: 1rem 0; }
 
+.page-content {
+  padding: 3rem 0; }
+
 .footer {
   background-color: #494947;
   color: #eaeaea;
