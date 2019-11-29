@@ -16,9 +16,10 @@ html {
   }
   
   h1 {
-    font-size: 4vw;  //! not rem but vw
+    font-size: 4rem;  
     line-height: 100%;
     text-transform: uppercase;
+    margin-bottom: $margin-b;
     
     @include mq(desktop) {
       font-size: 3vw; 
