@@ -1,0 +1,29 @@
+{# 
+/**
+* footer
+*/
+ #}
+
+ <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+           {{ page.footerleft }}
+           {# not in a content type because of extra security, also does not need to be translated #}
+           <script>mail("info","pts",0,"","")</script>
+        </div> <!-- end footer__left -->
+
+        <div class="footer__right">
+          <div class="footer__right-top">
+             {{ page.footerright }}
+          </div>
+          <div class="footer__right-bottom">
+            <a href="https://www.facebook.com/pts.be/">
+              <img class="social-icon social-icon--footer" src="{{ base_path ~ directory }}/images/facebook-icon.png" alt="">
+            </a>
+          </div>
+        </div> <!-- end footer__right -->
+      </div> <!-- end footer__inner -->
+
+    </div> <!-- end container in footer -->
+</footer>

@@ -3,7 +3,18 @@ globalstyle:
     theme:
       css/styles.css: {}
 
-javascript:
+email:
+  header: true
+  js:
+    js/email.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.ajax
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+mobilemenu:
   js:
     js/menu.js: {}
   dependencies:

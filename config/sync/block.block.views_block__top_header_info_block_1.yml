@@ -1,0 +1,24 @@
+uuid: 356589b0-c283-433f-9366-9984ff9a5f9b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.top_header_info
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__top_header_info_block_1
+theme: pts
+region: topheaderleft
+weight: 0
+provider: null
+plugin: 'views_block:top_header_info-block_1'
+settings:
+  id: 'views_block:top_header_info-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

@@ -8,92 +8,23 @@
 #}
 
 {# start r-overlay-contact #}
-<div class="r-overlay-contact">
-
-  <div class="r-overlay-contact__inner">
-
-    <div class="r-overlay-contact__close js-close-contact">
-      <div class="c-close-btn"></div>
-    </div>
-
-    <div class="r-overlay-contact__body">
-      {# block-region translatable with custom-block #}
-        {{ page.contactoverlay}}
-        {# not in a content type because of extra security, also does not need to be translated #}
-           info@pts.be
-    </div>
-
-  </div>
-</div>
+{% include directory ~ '/templates/partials/shared/contact-overlay.html.twig' %}
 {# end r-overlay-contact #}
 
 {# start r-menu-overlay #}
-<div class="r-menu-overlay">
-  <div class="r-menu-overlay__close js-close-menu">
-      <span class="c-close-btn">&nbsp;</span>
-  </div>
-  <div class="r-menu-overlay__list">
-   {{ page.mobilemenu }}
-  </div>
-  <div class="r-menu-overlay__social">
-    <a href="https://www.facebook.com/pts.be/">
-      <img  class="social-icon" src="{{ base_path ~ directory }}/images/facebook-icon.png" alt="Facebook icon" />
-    </a>
-  </div>
-
-</div>
+{% include directory ~ '/templates/partials/shared/menu-overlay.html.twig' %}
 {# r-menu-overlay #}
 
 {# start region r-top-header #}
-<region class="r-top-header">
-  <div class="r-top-header__left">
-    <div class="c-phone--mobile">
-      {# no block region must be untranslatable #}
-      <a class="c-phone-link" href="tel:011659845">011659845</a>
-    </div>
-    <div class="c-phone--desktop">
-      {# block-region topheader-left translatable #}
-      {{ page.topheaderleft }}
-    </div>
-  </div>
-  <div class="r-top-header__right">
-    <div class="c-language-selector">
-      {# block-region languageselector #}
-      {{ page.languageselector }}
-    </div>
-  </div>
-</region>
+{% include directory ~ '/templates/partials/shared/top-header.html.twig' %}
 {# end region r-top-header #}
 
 <div class="container">
 {# regions r-header and trailer region #}
 
   {# start region r-header #}
-  <region class="r-header">
-
-    {# Only visible on mobile contact-btn #}
-    <div class="r-header__contact--mobile open-contact">
-      <img src="{{ base_path ~ directory  }}/images/btn-contact.png" alt="Contact knop">
-    </div>
-
-    <div class="r-header__logo">
-      <img class="r-header__logo-img" src="{{ base_path ~ directory }}/images/logo.png" alt="Logo PTS-aanhangwagenbouw">
-    </div>
-    
-    {# convert to main-menu #}
-      <div class="r-header__menu">
-        {{ page.headermenu }}
-      </div>
-
-      {# Only visible on mobile menu-btn #}
-      <div class="r-header__menu--mobile">
-        <div class="c-hamburger-btn">
-          <span class="c-hamburger-btn--open">&nbsp;</span>
-        </div>
-      </div>
-
-  </region>
-    {# end region r-header #}
+  {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+  {# end region r-header #}
 
 {# start region trailers #}
   <region class="trailers">
@@ -150,28 +81,6 @@
 </div>
 {# end container  #}
 
-<footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div class="footer__left">
-           {{ page.footerleft }}
-           {# not in a content type because of extra security, also does not need to be translated #}
-           info@pts.be
-        </div> <!-- end footer__left -->
-
-        <div class="footer__right">
-          <div class="footer__right-top">
-             {{ page.footerright }}
-          </div>
-          <div class="footer__right-bottom">
-            <a href="https://www.facebook.com/pts.be/">
-              <img class="social-icon social-icon--footer" src="{{ base_path ~ directory }}/images/facebook-icon.png" alt="">
-            </a>
-          </div>
-
-        </div> <!-- end footer__right -->
-      </div> <!-- end footer__inner -->
-
-    </div> <!-- end container in footer -->
-
-  </footer>
+{# begin footer #}
+{% include directory ~ '/templates/partials/shared/footer.html.twig' %}
+{# end footer #}
