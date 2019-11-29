@@ -1,0 +1,18 @@
+uuid: 62d317fd-c792-45ef-8c49-489a127be88c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxonomie_info
+id: taxonomy_term.taxonomie_info.name
+field_name: name
+entity_type: taxonomy_term
+bundle: taxonomie_info
+label: Naam
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

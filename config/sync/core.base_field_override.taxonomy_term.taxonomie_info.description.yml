@@ -1,0 +1,20 @@
+uuid: 6b9b7266-badc-435e-9adf-d6c0decd40c5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxonomie_info
+  module:
+    - text
+id: taxonomy_term.taxonomie_info.description
+field_name: description
+entity_type: taxonomy_term
+bundle: taxonomie_info
+label: Beschrijving
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

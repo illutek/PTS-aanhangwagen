@@ -1,0 +1,20 @@
+uuid: 2bfb2b98-5cc9-4ecf-9ad1-95c40ca1baeb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxonomie_info
+  module:
+    - path
+id: taxonomy_term.taxonomie_info.path
+field_name: path
+entity_type: taxonomy_term
+bundle: taxonomie_info
+label: URL-alias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
