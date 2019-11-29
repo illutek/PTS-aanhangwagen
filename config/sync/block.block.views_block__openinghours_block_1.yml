@@ -1,0 +1,24 @@
+uuid: d65e818a-794e-4637-8ba8-07a0eff2dea1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.openinghours
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__openinghours_block_1
+theme: pts
+region: footerright
+weight: 0
+provider: null
+plugin: 'views_block:openinghours-block_1'
+settings:
+  id: 'views_block:openinghours-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
