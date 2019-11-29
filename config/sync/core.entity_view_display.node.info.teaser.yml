@@ -29,4 +29,5 @@ content:
     region: content
 hidden:
   field_type_info: true
+  field_typof_info: true
   langcode: true

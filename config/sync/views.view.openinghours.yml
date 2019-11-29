@@ -7,6 +7,7 @@ dependencies:
     - node.type.info
   module:
     - node
+    - options
     - user
 id: openinghours
 label: openingsuren
@@ -168,6 +169,45 @@ display:
           entity_type: node
           entity_field: langcode
           plugin_id: language
+        field_typof_info_value:
+          id: field_typof_info_value
+          table: node__field_typof_info
+          field: field_typof_info_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            open: open
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
       sorts:
         created:
           id: created
