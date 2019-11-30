@@ -1,0 +1,24 @@
+uuid: efee03bd-f1ed-4249-ac9c-4616c48f5d7c
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node
+label: node
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  c93e8222-679c-42f1-a99e-2df1a24c91bd:
+    id: node_type
+    bundles:
+      news: news
+      page: page
+      trailers: trailers
+    negate: false
+    context_mapping:
+      node: node
+    uuid: c93e8222-679c-42f1-a99e-2df1a24c91bd
+selection_logic: and
+weight: -5
+relationships: {  }
