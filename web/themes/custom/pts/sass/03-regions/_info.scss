@@ -24,7 +24,7 @@
     &__news {
         background-color: $accent;
         padding: 2rem;
-        position: relative;
+        // position: relative;
 
         @include mq(tablet){
             width: 50vw;

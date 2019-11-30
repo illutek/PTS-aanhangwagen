@@ -5,9 +5,10 @@
 .c-readmore {
     text-decoration: none;
     cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    bottom: 1rem;
+
+    &__region {
+        text-align: right;
+    }
 
     &--white {
         color: $white;

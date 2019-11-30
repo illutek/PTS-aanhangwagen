@@ -280,8 +280,7 @@ strong {
     margin-right: 1rem; }
   .r-info__news {
     background-color: #E8492F;
-    padding: 2rem;
-    position: relative; }
+    padding: 2rem; }
     @media screen and (min-width: 37.5em) {
       .r-info__news {
         width: 50vw; } }
@@ -510,10 +509,9 @@ strong {
 
 .c-readmore {
   text-decoration: none;
-  cursor: pointer;
-  position: absolute;
-  right: 2rem;
-  bottom: 1rem; }
+  cursor: pointer; }
+  .c-readmore__region {
+    text-align: right; }
   .c-readmore--white {
     color: #eaeaea; }
 

@@ -47,9 +47,10 @@
      </p>
   </div>
 
-  {% if bodytext|length > textlenght %}
-    <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
-  {% endif %}
-
+  <div class="c-readmore__region">
+    {% if bodytext|length > textlenght %}
+      <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
+    {% endif %}
+  </div>
 
 </article>
