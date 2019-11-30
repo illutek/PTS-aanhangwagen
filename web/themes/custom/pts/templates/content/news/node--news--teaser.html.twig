@@ -19,7 +19,6 @@
 {%
   set classes = [
     'node',
-    'r-info__news--desktop',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -51,5 +50,6 @@
   {% if bodytext|length > textlenght %}
     <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
   {% endif %}
+
 
 </article>
