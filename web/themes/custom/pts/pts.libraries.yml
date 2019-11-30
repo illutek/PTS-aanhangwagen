@@ -14,9 +14,10 @@ email:
     - core/drupalSettings
     - core/jquery.once
 
-mobilemenu:
+mobile:
   js:
     js/menu.js: {}
+    js/contact.js: {}
   dependencies:
     - core/jquery
     - core/drupal.ajax

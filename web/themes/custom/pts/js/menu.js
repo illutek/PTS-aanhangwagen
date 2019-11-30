@@ -6,12 +6,9 @@
 (function () {
     'use strict';
   
-    const openBtn = document.querySelector('.c-hamburger-btn');
-    const openBtnContact = document.querySelector('.open-contact');
-    const closeBtn = document.querySelector('.js-close-menu');
-    const closeBtnContact = document.querySelector('.js-close-contact');
-    const menuOverlay = document.querySelector('.r-menu-overlay');
-    const contactOverlay = document.querySelector('.r-overlay-contact');
+    const openBtn = document.querySelector('.c-hamburger-btn');    
+    const closeBtn = document.querySelector('.js-close-menu');    
+    const menuOverlay = document.querySelector('.r-menu-overlay');    
     const openmenu = document.querySelector('.r-menu-overlay');
   
     // console.log(contactOverlay);
@@ -24,23 +21,12 @@
       menuOverlay.classList.remove('r-menu-overlay--visible');
     }
 
-    function closeContact() {
-      contactOverlay.classList.remove('r-overlay-contact--visible');
-    }
-  
     function openMenu() {
       menuOverlay.classList.toggle('r-menu-overlay--visible');
     }
-
-    function openContact() {
-      contactOverlay.classList.toggle('r-overlay-contact--visible');
-    }
-  
-    openBtn.addEventListener('click', openMenu);
-    openBtnContact.addEventListener('click', openContact);
-  
-    closeBtn.addEventListener('click', closeMenu);
-    closeBtnContact.addEventListener('click', closeContact);
+ 
+    openBtn.addEventListener('click', openMenu);  
+    closeBtn.addEventListener('click', closeMenu);    
     openmenu.addEventListener('click', () => setTimeout(closeMenu, 500));
   
   })();

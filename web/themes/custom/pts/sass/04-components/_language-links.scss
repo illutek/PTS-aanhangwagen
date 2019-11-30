@@ -4,6 +4,7 @@
 
 .c-language {
     &__items {
+        list-style: none;
         display: flex;
 
         & .is-active {
@@ -11,6 +12,7 @@
         }
     }
     &__item {
+        margin-left: 0;
         &:not(:last-child) {
             padding-right: 1.6rem;
         }

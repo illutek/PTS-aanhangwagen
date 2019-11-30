@@ -82,6 +82,12 @@ ol {
   margin-right: 0;
   padding-left: 40px; }
 
+ul {
+  list-style-type: circle; }
+
+li {
+  margin-left: 3.5rem; }
+
 html {
   font-family: "Raleway", sans-serif; }
 
@@ -377,14 +383,17 @@ strong {
       padding: 2rem 0; }
 
 .c-language__items {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   .c-language__items .is-active {
     border-bottom: 1px solid #eaeaea; }
 
-.c-language__item:not(:last-child) {
-  padding-right: 1.6rem; }
+.c-language__item {
+  margin-left: 0; }
+  .c-language__item:not(:last-child) {
+    padding-right: 1.6rem; }
 
 .language-link {
   text-decoration: none;
@@ -421,7 +430,11 @@ strong {
       top: 0.6rem;
       width: 2rem; }
 
+.c-menu-overlay__items {
+  list-style: none; }
+
 .c-menu-overlay__item {
+  margin-left: 0;
   font-size: 4rem;
   line-height: 6rem; }
 
@@ -431,6 +444,7 @@ strong {
   color: #eaeaea; }
 
 .c-main-menu__items {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,8 +454,10 @@ strong {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap; }
 
-.c-main-menu__item:not(:last-child) {
-  padding-right: 1rem; }
+.c-main-menu__item {
+  margin-left: 0; }
+  .c-main-menu__item:not(:last-child) {
+    padding-right: 1rem; }
 
 .c-main-menu__link {
   text-decoration: none;

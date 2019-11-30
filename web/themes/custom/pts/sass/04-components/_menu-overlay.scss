@@ -3,9 +3,12 @@
 // //////////////////////////////
 .c-menu-overlay {
 
-    &__items {}
+    &__items {
+        list-style: none;
+    }
 
     &__item {
+        margin-left: 0;
         font: {
             size: 4rem;
         };
