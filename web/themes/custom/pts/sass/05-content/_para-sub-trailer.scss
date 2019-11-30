@@ -1,0 +1,33 @@
+// /////////////////////////////
+// @@ PARAGRAPH SUB-TRAILER 
+// /////////////////////////////
+
+.para-subtrailer {
+    padding: 2rem;
+    border: 2px solid $gray;
+
+    &__images {}
+
+    &__images-items {
+
+        @include mq(tablet){
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+    }
+
+    &__images-item {
+
+        &:not(:last-child) {
+            margin-bottom: $margin-b;
+        }
+
+        @include mq(tablet) {
+            max-width: 30%;
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

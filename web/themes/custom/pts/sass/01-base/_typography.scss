@@ -18,7 +18,7 @@ html {
   h1 {
     font-size: 4rem;  
     line-height: 100%;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     margin-bottom: $margin-b;
     
     @include mq(desktop) {
