@@ -14,23 +14,3 @@
     }
 }
 
-.trailer-model {
-    position: relative;
-    margin-bottom: $margin-b;
-
-    @include mq(tablet) {
-        flex-grow: 1;
-        max-width: 24rem;
-    }
-
-    &__img {}
-
-    &__caption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem 2rem;
-        background-color: $gray;
-    }
-}

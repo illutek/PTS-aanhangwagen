@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.trailers.body
+    - field.field.node.trailers.field_on_frontpage
     - field.field.node.trailers.field_para_sub_trailer
     - field.field.node.trailers.field_trailer_highlighted
     - field.field.node.trailers.field_trailer_img
@@ -25,6 +26,13 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_on_frontpage:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_para_sub_trailer:
     type: entity_reference_revisions_entity_view

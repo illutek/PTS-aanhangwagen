@@ -1,0 +1,24 @@
+uuid: 67214003-93e0-415c-ab3c-e8fddaaa79d5
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.trailers_teaser
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__trailers_teaser_block_1
+theme: pts
+region: trailers
+weight: 0
+provider: null
+plugin: 'views_block:trailers_teaser-block_1'
+settings:
+  id: 'views_block:trailers_teaser-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

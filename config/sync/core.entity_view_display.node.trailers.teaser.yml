@@ -5,30 +5,36 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.trailers.body
+    - field.field.node.trailers.field_on_frontpage
+    - field.field.node.trailers.field_para_sub_trailer
+    - field.field.node.trailers.field_trailer_highlighted
+    - field.field.node.trailers.field_trailer_img
     - node.type.trailers
   module:
-    - text
+    - image
     - user
 id: node.trailers.teaser
 targetEntityType: node
 bundle: trailers
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_trailer_img:
+    type: image
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
+  body: true
+  field_on_frontpage: true
   field_para_sub_trailer: true
   field_trailer_highlighted: true
-  field_trailer_img: true
   langcode: true

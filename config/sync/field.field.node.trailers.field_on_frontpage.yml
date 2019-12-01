@@ -1,0 +1,23 @@
+uuid: 0ca167ad-dc20-470a-b7bf-5aef1c582d62
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_on_frontpage
+    - node.type.trailers
+  module:
+    - options
+id: node.trailers.field_on_frontpage
+field_name: field_on_frontpage
+entity_type: node
+bundle: trailers
+label: 'Op voor pagina'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: nee
+default_value_callback: ''
+settings: {  }
+field_type: list_string
