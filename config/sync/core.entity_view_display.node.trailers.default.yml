@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.trailers.field_para_sub_trailer
     - field.field.node.trailers.field_trailer_highlighted
     - field.field.node.trailers.field_trailer_img
+    - image.style.550x400
     - node.type.trailers
   module:
     - entity_reference_revisions
@@ -54,7 +55,7 @@ content:
     weight: 102
     label: hidden
     settings:
-      image_style: ''
+      image_style: 550x400
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.sub_trailer.field_body_sub_trailer
     - field.field.paragraph.sub_trailer.field_para_sub_trailer_img
     - field.field.paragraph.sub_trailer.field_title_sub_trailer
+    - image.style.550x400
     - paragraphs.paragraphs_type.sub_trailer
   module:
     - image
@@ -26,7 +27,7 @@ content:
     weight: 2
     label: hidden
     settings:
-      image_style: ''
+      image_style: 550x400
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -572,6 +572,10 @@ strong {
       -ms-flex-direction: row;
       flex-direction: row; } }
   @media screen and (min-width: 37.5em) {
+    .trailer-models--view {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+  @media screen and (min-width: 37.5em) {
     .trailer-models__views-row {
       margin: 1rem; } }
 
@@ -583,7 +587,7 @@ strong {
       -webkit-box-flex: 1;
       -ms-flex-positive: 1;
       flex-grow: 1;
-      max-width: 24rem; } }
+      max-width: 95%; } }
   .trailer-model__caption {
     position: absolute;
     left: 0;

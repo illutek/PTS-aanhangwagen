@@ -2,6 +2,8 @@
 // @@ TRAILERS TEASER CONTENT  
 // //////////////////////////////
 
+// The front trailer-teaser block highlighted block 
+
 .trailer-models {
   display: flex;
   justify-content: space-evenly;
@@ -9,6 +11,12 @@
 
   @include mq(tablet) {
     flex-direction: row;
+  }
+
+  &--view {
+    @include mq(tablet) {
+      flex-wrap: wrap;
+    }
   }
 
   &__views-row {
@@ -21,13 +29,15 @@
 }
 
 
+// Node teaser
+
 .trailer-model {
   position: relative;
   margin-bottom: $margin-b;
 
   @include mq(tablet) {
       flex-grow: 1;
-      max-width: 24rem;
+      max-width: 95%;
   }
 
   &__img {}
@@ -39,6 +49,5 @@
       bottom: 0;
       padding: 1rem 2rem;
       background-color: $gray;
-      // color: $white;
   }
 }

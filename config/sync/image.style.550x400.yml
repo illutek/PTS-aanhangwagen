@@ -1,0 +1,15 @@
+uuid: 2d2fe75c-9cb9-43a8-b746-da2c2b0fb5b4
+langcode: nl
+status: true
+dependencies: {  }
+name: 550x400
+label: 550x400
+effects:
+  53953060-2e64-4eb3-90b9-ea84caa3e2a8:
+    uuid: 53953060-2e64-4eb3-90b9-ea84caa3e2a8
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 550
+      height: 400
+      anchor: center-center

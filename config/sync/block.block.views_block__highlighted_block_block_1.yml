@@ -1,0 +1,24 @@
+uuid: dbdfa4c5-b875-4a6d-bf96-9bbbd5ec81c7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.highlighted_block
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__highlighted_block_block_1
+theme: pts
+region: highlighted
+weight: 0
+provider: null
+plugin: 'views_block:highlighted_block-block_1'
+settings:
+  id: 'views_block:highlighted_block-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }
