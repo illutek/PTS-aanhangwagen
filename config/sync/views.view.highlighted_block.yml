@@ -3,7 +3,7 @@ langcode: nl
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.extra_teaser
     - node.type.trailers
   module:
     - node
@@ -59,7 +59,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: extra_teaser
       fields:
         title:
           id: title

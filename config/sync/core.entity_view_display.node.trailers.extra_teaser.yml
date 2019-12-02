@@ -1,9 +1,9 @@
-uuid: bdfbf515-4e5a-48da-b815-4b6b3691f2b4
+uuid: 7893c3f4-0f10-4dce-bb1e-4275c592684f
 langcode: nl
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.extra_teaser
     - field.field.node.trailers.body
     - field.field.node.trailers.field_on_frontpage
     - field.field.node.trailers.field_para_sub_trailer
@@ -14,20 +14,20 @@ dependencies:
   module:
     - image
     - user
-id: node.trailers.teaser
+id: node.trailers.extra_teaser
 targetEntityType: node
 bundle: trailers
-mode: teaser
+mode: extra_teaser
 content:
   field_trailer_img:
-    type: image
     weight: 0
-    region: content
     label: hidden
     settings:
       image_style: 550x400
       image_link: ''
     third_party_settings: {  }
+    type: image
+    region: content
   links:
     weight: 1
     region: content

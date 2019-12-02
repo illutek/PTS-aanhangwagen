@@ -28,8 +28,7 @@
  
 }
 
-
-// Node teaser
+// Node teaser, &--accent lives in node--extra-teaser
 
 .trailer-model {
   position: relative;
@@ -49,5 +48,9 @@
       bottom: 0;
       padding: 1rem 2rem;
       background-color: $gray;
+
+      &--accent {
+        background-color: $accent;
+      }
   }
 }

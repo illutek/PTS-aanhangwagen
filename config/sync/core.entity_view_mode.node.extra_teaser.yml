@@ -1,0 +1,10 @@
+uuid: 1341157b-f327-42cb-b374-84e65bb89346
+langcode: nl
+status: true
+dependencies:
+  module:
+    - node
+id: node.extra_teaser
+label: extra-teaser
+targetEntityType: node
+cache: true
