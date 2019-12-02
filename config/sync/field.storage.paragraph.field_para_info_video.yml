@@ -1,0 +1,19 @@
+uuid: 33d0ba39-98cb-4b1c-8f24-988b5e098fa3
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_para_info_video
+field_name: field_para_info_video
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

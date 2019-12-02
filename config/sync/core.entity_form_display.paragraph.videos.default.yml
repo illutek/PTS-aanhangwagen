@@ -3,15 +3,25 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.field.paragraph.videos.field_para_info_video
     - field.field.paragraph.videos.field_para_video
     - paragraphs.paragraphs_type.videos
   module:
+    - text
     - video_embed_field
 id: paragraph.videos.default
 targetEntityType: paragraph
 bundle: videos
 mode: default
 content:
+  field_para_info_video:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
   field_para_video:
     weight: 0
     settings: {  }

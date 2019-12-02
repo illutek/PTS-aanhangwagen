@@ -4,21 +4,31 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.photos.field_para_img
+    - field.field.paragraph.photos.field_para_info_img
+    - image.style.550x400
     - paragraphs.paragraphs_type.photos
   module:
     - image
+    - text
 id: paragraph.photos.default
 targetEntityType: paragraph
 bundle: photos
 mode: default
 content:
   field_para_img:
-    weight: 0
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      image_style: ''
+      image_style: 550x400
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_para_info_img:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
     region: content
 hidden: {  }

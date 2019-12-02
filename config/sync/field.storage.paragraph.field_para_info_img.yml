@@ -1,0 +1,19 @@
+uuid: 3dae2488-967d-4fbf-a665-a36447372945
+langcode: nl
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_para_info_img
+field_name: field_para_info_img
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

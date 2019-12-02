@@ -1,0 +1,21 @@
+uuid: 2ecd2b3c-fa97-4a3d-9c47-3a751faaebe6
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_info_img
+    - paragraphs.paragraphs_type.photos
+  module:
+    - text
+id: paragraph.photos.field_para_info_img
+field_name: field_para_info_img
+entity_type: paragraph
+bundle: photos
+label: 'Info over de foto''s'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
