@@ -2,6 +2,25 @@
 // @@ TRAILERS TEASER CONTENT  
 // //////////////////////////////
 
+.trailer-models {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    flex-direction: row;
+  }
+
+  &__views-row {
+
+    @include mq(tablet) {
+      margin: 1rem;
+    }
+  }
+ 
+}
+
+
 .trailer-model {
   position: relative;
   margin-bottom: $margin-b;
@@ -20,5 +39,6 @@
       bottom: 0;
       padding: 1rem 2rem;
       background-color: $gray;
+      // color: $white;
   }
 }

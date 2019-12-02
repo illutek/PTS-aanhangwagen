@@ -25,6 +25,7 @@
 {%
   set classes = [
     'node',
+    'node-link',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -36,8 +37,12 @@
 <a href="{{url}}" {{ attributes.addClass(classes) }}>
 
   <div{{ content_attributes.addClass('trailer-model') }}>
-    <div class="trailer-model__img">{{ content.field_trailer_img }} </div>
-    <div class="trailer-model__caption">{{ label }}</div>
+    <div class="trailer-model__img">
+      {{ content.field_trailer_img }}
+    </div>
+    <div class="trailer-model__caption">
+      {{ label }}
+    </div>
   </div>
 
 </a>
