@@ -1,0 +1,45 @@
+uuid: d14c9506-cc5c-4e8b-9dc4-69583dd0a591
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aboutus_img
+    - node.type.about_us
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.about_us.field_aboutus_img
+field_name: field_aboutus_img
+entity_type: node
+bundle: about_us
+label: Afbeelding
+description: '1 foto om langs de tekst te tonen, deze zelfde foto wordt ook op de voor pagina getoond.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: about-us-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 800x800
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,9 @@
+uuid: 87d7daf4-4479-409a-95ee-fe2524a41314
+langcode: nl
+status: true
+dependencies: {  }
+id: photos
+label: Photos
+icon_uuid: null
+description: 'Enkel foto''s'
+behavior_plugins: {  }

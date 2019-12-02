@@ -1,0 +1,22 @@
+uuid: 65a3cf04-ad46-4fe6-b209-850c8b41ca8e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.photos
+id: paragraph.photos.status
+field_name: status
+entity_type: paragraph
+bundle: photos
+label: Gepubliceerd
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

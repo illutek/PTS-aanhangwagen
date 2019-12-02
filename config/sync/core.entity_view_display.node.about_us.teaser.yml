@@ -1,0 +1,43 @@
+uuid: 03c87bca-ea44-45df-a988-5bb4418db60c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.about_us.body
+    - field.field.node.about_us.field_aboutus_img
+    - image.style.550x400
+    - node.type.about_us
+  module:
+    - image
+    - text
+    - user
+id: node.about_us.teaser
+targetEntityType: node
+bundle: about_us
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 2
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_aboutus_img:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: 550x400
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

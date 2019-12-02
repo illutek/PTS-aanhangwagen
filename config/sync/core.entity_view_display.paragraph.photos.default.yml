@@ -1,0 +1,24 @@
+uuid: 64fdbc7b-7bed-447d-aba6-bbce9ad373c7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos.field_para_img
+    - paragraphs.paragraphs_type.photos
+  module:
+    - image
+id: paragraph.photos.default
+targetEntityType: paragraph
+bundle: photos
+mode: default
+content:
+  field_para_img:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

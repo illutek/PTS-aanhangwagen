@@ -1,0 +1,26 @@
+uuid: 5f0513e7-c8d2-4669-a958-74c0f0e00c7b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.photos.field_para_img
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.photos
+  module:
+    - image
+id: paragraph.photos.default
+targetEntityType: paragraph
+bundle: photos
+mode: default
+content:
+  field_para_img:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

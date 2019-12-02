@@ -1,0 +1,22 @@
+uuid: 479f7663-d39e-4b59-b7f1-c3e147a9d010
+langcode: nl
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.videos
+id: paragraph.videos.status
+field_name: status
+entity_type: paragraph
+bundle: videos
+label: Gepubliceerd
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,39 @@
+uuid: 59a6d08f-c4c3-4e14-9340-61c84c92f433
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_aboutus_images
+    - node.type.about_us
+    - paragraphs.paragraphs_type.photos
+    - paragraphs.paragraphs_type.videos
+  module:
+    - entity_reference_revisions
+id: node.about_us.field_aboutus_images
+field_name: field_aboutus_images
+entity_type: node
+bundle: about_us
+label: 'Afbeeldingen en video'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      videos: videos
+      photos: photos
+    target_bundles_drag_drop:
+      videos:
+        enabled: true
+        weight: 4
+      photos:
+        enabled: true
+        weight: 5
+      sub_trailer:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

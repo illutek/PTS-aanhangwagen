@@ -9,16 +9,17 @@ label: node
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  c93e8222-679c-42f1-a99e-2df1a24c91bd:
+  1c9ad2c8-689b-4c1f-9833-da14d8eb42af:
     id: node_type
     bundles:
+      about_us: about_us
       news: news
       page: page
       trailers: trailers
     negate: false
     context_mapping:
       node: node
-    uuid: c93e8222-679c-42f1-a99e-2df1a24c91bd
+    uuid: 1c9ad2c8-689b-4c1f-9833-da14d8eb42af
 selection_logic: and
 weight: -5
 relationships: {  }

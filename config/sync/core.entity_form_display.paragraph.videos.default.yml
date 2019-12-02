@@ -1,0 +1,23 @@
+uuid: d960a810-e8f4-4f8c-b0dc-ecdeb2a14085
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.videos.field_para_video
+    - paragraphs.paragraphs_type.videos
+  module:
+    - video_embed_field
+id: paragraph.videos.default
+targetEntityType: paragraph
+bundle: videos
+mode: default
+content:
+  field_para_video:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+hidden:
+  created: true
+  status: true
