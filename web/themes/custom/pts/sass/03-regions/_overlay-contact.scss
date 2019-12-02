@@ -15,17 +15,24 @@
   background: $gray;
   transition: all 0.9s;
 
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
   &__close {
     padding-top: 1rem;
-    height: 4rem;
+    padding-right: 6rem;
+    height: 20rem;
+    width: 20rem;
+    align-self: end;
     text-align: right;
-    width: 88vw;
 
   }
 
   &__body {
-    width: 80vw;
-    margin: 20rem auto 0;
+    width: 60vw;
+    align-self: center;
   }
 
   &--visible {
