@@ -1,0 +1,43 @@
+// /////////////////////////
+// @@ ABOUT US FULL 
+// ////////////////////////
+
+.node-aboutus {
+
+    &__content {
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $black;
+        margin-bottom: $margin-b;
+    }
+
+}
+
+
+.para-aboutus {
+
+    &__video {
+        margin-bottom: $margin-b;
+    }
+
+    &__photo {}
+
+    &__photo-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__photo-item {
+        margin-bottom: $margin-b;
+    }
+
+    &__video-items {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__video-item {
+        margin-bottom: $margin-b;
+    }
+
+}

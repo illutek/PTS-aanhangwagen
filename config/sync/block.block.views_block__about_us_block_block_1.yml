@@ -1,0 +1,24 @@
+uuid: 7b7a5d53-cee2-434c-894b-15119e8ea422
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.about_us_block
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__about_us_block_block_1
+theme: pts
+region: aboutus
+weight: 0
+provider: null
+plugin: 'views_block:about_us_block-block_1'
+settings:
+  id: 'views_block:about_us_block-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
