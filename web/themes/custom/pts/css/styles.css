@@ -639,7 +639,33 @@ strong {
 .node-aboutus__content {
   padding-bottom: 3rem;
   border-bottom: 1px solid #12130f;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media screen and (min-width: 37.5em) {
+    .node-aboutus__content {
+      display: block; } }
+
+.node-aboutus__body {
+  -webkit-box-ordinal-group: 1;
+  -ms-flex-order: 0;
+  order: 0; }
+
+.node-aboutus__img {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+  @media screen and (min-width: 37.5em) {
+    .node-aboutus__img {
+      float: left;
+      width: 50%;
+      max-width: 40rem;
+      margin-right: 2rem; } }
 
 .para-aboutus__video {
   margin-bottom: 3rem; }
@@ -652,9 +678,22 @@ strong {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column; }
+  @media screen and (min-width: 37.5em) {
+    .para-aboutus__photo-items {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .para-aboutus__photo-item {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  width: 47%;
+  margin: 1rem; }
 
 .para-aboutus__video-items {
   display: -webkit-box;
@@ -663,10 +702,28 @@ strong {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 37.5em) {
+    .para-aboutus__video-items {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
 .para-aboutus__video-item {
   margin-bottom: 3rem; }
+  @media screen and (min-width: 37.5em) {
+    .para-aboutus__video-item {
+      width: 47%;
+      height: auto;
+      margin: 1rem; } }
 
 .node-teaser-aboutus__img {
   margin-bottom: 3rem; }

@@ -32,8 +32,14 @@
   {{ title_suffix }}
 
   <div{{ content_attributes.addClass('node-aboutus__content') }}>
-    {{ content.body }}
-    {{ content.field_aboutus_img }}
+<div class="node-aboutus__img">
+      {{ content.field_aboutus_img }}
+    </div>
+    
+    <div class="node-aboutus__body">
+      {{ content.body }}
+    </div>
+    
   </div>
 
   <div class="para-aboutus">
