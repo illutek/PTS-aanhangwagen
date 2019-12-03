@@ -6,6 +6,13 @@
 
     &__img {
         margin-bottom: $margin-b;
+
+        @include mq(tablet) {
+            width: 50%;
+            max-width: 30rem;
+            margin-left: 1.5rem;
+            float: right;
+        }
     }
 
 }

@@ -4,7 +4,6 @@
 
 .r-info {
     color: $white;
-    // position: relative;
     margin-bottom: $margin-b;
     display: flex;
     flex-direction: column;
@@ -15,33 +14,30 @@
 
     &__img {
         width: 50%;
-        max-width: 25rem;
+        max-width: 30rem;
         float: left;
-        margin-right: 1rem;
+        margin-right: 1.5rem;
     }
 
 
     &__news {
         background-color: $accent;
         padding: 2rem;
-        // position: relative;
 
         @include mq(tablet){
             width: 50vw;
         }
 
         &--desktop {
-            height: 100%;
            
             @include mq(desktop) {
-                margin-left: 10%;
+                margin-left: 10vw;
             }
         }
 
     }
 
     &__aboutus {
-        position: relative;
         background-color: $dark-gray;
         padding: 2rem;
 

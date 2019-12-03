@@ -28,13 +28,10 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      {{ label }}
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <h2{{ title_attributes }}>
+      <a href="{{ url }}"  class="c-readmore c-readmore--white">{{ label }}</a>
+  </h2>
+
 
   <div class="node-teaser-aboutus__img">
     {{ content.field_aboutus_img }}
@@ -44,8 +41,12 @@
     <p>{{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}</p>
   </div>
 
-   {% if bodytext|length > textlenght %}
+  
+  
+  <div class="c-readmore__region">
+    {% if bodytext|length > textlenght %}
       <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
     {% endif %}
+  </div>
 
 </article>

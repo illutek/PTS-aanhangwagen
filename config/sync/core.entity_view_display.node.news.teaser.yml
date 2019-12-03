@@ -6,7 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.news.body
     - field.field.node.news.field_news_img
-    - image.style.medium
+    - image.style.550x400
     - node.type.news
   module:
     - image
@@ -30,8 +30,8 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: medium
-      image_link: ''
+      image_style: 550x400
+      image_link: content
     third_party_settings: {  }
   links:
     weight: 2
