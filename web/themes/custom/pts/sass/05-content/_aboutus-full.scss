@@ -46,10 +46,9 @@
     &__photo {}
 
     &__photo-items {
-        display: flex;
-        flex-direction: column;
 
         @include mq(tablet) {
+            display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
@@ -58,16 +57,18 @@
 
     &__photo-item {
         margin-bottom: $margin-b;
-        width: 47%;
-        margin: 1rem;
+
+        @include mq(tablet) {
+            width: 47%;
+            margin: 1rem;
+        }
+       
     }
 
     &__video-items {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
 
         @include mq(tablet) {
+            display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             flex-wrap: wrap;
