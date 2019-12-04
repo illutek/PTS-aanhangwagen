@@ -1,8 +1,0 @@
-uuid: 70d1f558-14f2-45e5-81cb-464e400573e6
-langcode: nl
-status: true
-dependencies: {  }
-id: mobile-menu
-label: 'Mobile menu'
-description: ''
-locked: false

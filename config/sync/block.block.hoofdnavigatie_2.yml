@@ -1,6 +1,6 @@
-uuid: f15512ae-e004-4fa9-9baf-0fc9ec68541f
+uuid: c89a6674-bce8-4153-a4f5-f28c03672b26
 langcode: nl
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -8,10 +8,10 @@ dependencies:
     - system
   theme:
     - pts
-id: hoofdnavigatie
+id: hoofdnavigatie_2
 theme: pts
 region: mobilemenu
-weight: -8
+weight: 0
 provider: null
 plugin: 'system_menu_block:main'
 settings:
