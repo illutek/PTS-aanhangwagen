@@ -214,7 +214,7 @@ strong {
     left: 0; }
 
 .r-top-header {
-  background-color: #E8492F;
+  background-color: #e8492f;
   padding: 0 1rem;
   height: 6rem;
   color: #eaeaea;
@@ -298,7 +298,7 @@ strong {
     float: left;
     margin-right: 1.5rem; }
   .r-info__news {
-    background-color: #E8492F;
+    background-color: #e8492f;
     padding: 2rem; }
     @media screen and (min-width: 37.5em) {
       .r-info__news {
@@ -307,7 +307,7 @@ strong {
       .r-info__news--desktop {
         margin-left: 10vw; } }
   .r-info__aboutus {
-    background-color: #494947;
+    background-color: #31312f;
     padding: 2rem; }
     @media screen and (min-width: 37.5em) {
       .r-info__aboutus {
@@ -348,7 +348,7 @@ strong {
   right: 0;
   bottom: 0;
   padding: 1rem 2rem;
-  background-color: #E8492F; }
+  background-color: #e8492f; }
 
 .parts {
   color: #eaeaea; }
@@ -364,7 +364,7 @@ strong {
   padding: 3rem 0; }
 
 .footer {
-  background-color: #494947;
+  background-color: #31312f;
   color: #eaeaea;
   padding: 2rem 0; }
   @media screen and (min-width: 37.5em) {
@@ -415,7 +415,7 @@ strong {
 .c-hamburger-btn {
   height: 4rem;
   width: 4rem;
-  border: 1px solid #494947;
+  border: 1px solid #31312f;
   text-align: center;
   -webkit-transition: all 1.2s;
   transition: all 1.2s;
@@ -476,7 +476,7 @@ strong {
   text-decoration: none;
   color: #12130f; }
   .c-main-menu__link:hover {
-    color: #494947; }
+    color: #31312f; }
 
 .is-active {
   border-bottom: 1px solid #6d6e70; }
@@ -625,9 +625,9 @@ strong {
     right: 0;
     bottom: 0;
     padding: 1rem 2rem;
-    background-color: #6d6e70; }
+    background-color: rgba(109, 110, 112, 0.7); }
     .trailer-model__caption--accent {
-      background-color: #E8492F; }
+      background-color: rgba(232, 73, 47, 0.8); }
 
 .para-subtrailer {
   padding: 2rem;
