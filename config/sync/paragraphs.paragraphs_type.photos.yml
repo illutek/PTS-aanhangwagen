@@ -5,5 +5,5 @@ dependencies: {  }
 id: photos
 label: Photos
 icon_uuid: null
-description: 'Enkel foto''s'
+description: 'Onbeperkt aantal foto''s 2 langs elkaar getoond op een niet mobiel toestel.'
 behavior_plugins: {  }

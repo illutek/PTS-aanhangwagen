@@ -5,5 +5,5 @@ dependencies: {  }
 id: videos
 label: 'Video''s'
 icon_uuid: null
-description: ''
+description: 'Onbeperkt aantal video''s 2 langs elkaar getoond op een niet mobiel toestel.'
 behavior_plugins: {  }

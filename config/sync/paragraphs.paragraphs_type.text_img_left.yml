@@ -5,5 +5,5 @@ dependencies: {  }
 id: text_img_left
 label: 'Tekst met linkse foto'
 icon_uuid: null
-description: ''
+description: 'Een tekst veld met een foto aan de linker kant. Bij de mobiel versie wordt foto onder de tekst getoond.'
 behavior_plugins: {  }
