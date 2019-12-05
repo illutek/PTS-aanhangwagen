@@ -1,0 +1,18 @@
+uuid: 73e5de20-749e-49a5-a11a-790e5e3c7f51
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.title
+field_name: title
+entity_type: node
+bundle: verhuur
+label: Titel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

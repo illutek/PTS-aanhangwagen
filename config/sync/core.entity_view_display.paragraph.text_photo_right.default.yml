@@ -1,0 +1,34 @@
+uuid: 95f0520f-bc70-4f29-8d54-99e5faf16e5c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_photo_right.field_para_img_right
+    - field.field.paragraph.text_photo_right.field_para_text
+    - image.style.550x400
+    - paragraphs.paragraphs_type.text_photo_right
+  module:
+    - image
+    - text
+id: paragraph.text_photo_right.default
+targetEntityType: paragraph
+bundle: text_photo_right
+mode: default
+content:
+  field_para_img_right:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 550x400
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_para_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,47 @@
+uuid: ff57fab2-1917-47ab-a4d1-8e7d1294a6e0
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_rental
+    - node.type.verhuur
+    - paragraphs.paragraphs_type.photos
+    - paragraphs.paragraphs_type.text_img_left
+    - paragraphs.paragraphs_type.text_photo_right
+  module:
+    - entity_reference_revisions
+id: node.verhuur.field_content_rental
+field_name: field_content_rental
+entity_type: node
+bundle: verhuur
+label: Inhoud
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      text_img_left: text_img_left
+      text_photo_right: text_photo_right
+      photos: photos
+    target_bundles_drag_drop:
+      sub_trailer:
+        weight: -11
+        enabled: false
+      text_img_left:
+        enabled: true
+        weight: -10
+      text_photo_right:
+        enabled: true
+        weight: -9
+      photos:
+        enabled: true
+        weight: -8
+      videos:
+        weight: -7
+        enabled: false
+field_type: entity_reference_revisions

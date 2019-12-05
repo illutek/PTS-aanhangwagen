@@ -1,0 +1,9 @@
+uuid: 24fb9f56-8899-4394-8704-38950965c47a
+langcode: nl
+status: true
+dependencies: {  }
+id: text_img_left
+label: 'Tekst met linkse foto'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

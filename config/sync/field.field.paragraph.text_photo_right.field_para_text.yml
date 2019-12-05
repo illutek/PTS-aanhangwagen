@@ -1,0 +1,21 @@
+uuid: 9108961b-7339-4a5e-b71a-02a300d4f93a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.text_photo_right
+  module:
+    - text
+id: paragraph.text_photo_right.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: text_photo_right
+label: Tekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

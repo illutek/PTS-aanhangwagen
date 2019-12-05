@@ -1,0 +1,20 @@
+uuid: 5ff89246-4e34-4da0-bc61-a55ea7583065
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.menu_link
+field_name: menu_link
+entity_type: node
+bundle: verhuur
+label: Menulink
+description: 'Berekende menulink van de node (alleen beschikbaar tijdens het opslaan).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

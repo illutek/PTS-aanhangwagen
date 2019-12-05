@@ -1,0 +1,23 @@
+uuid: 9a3cabc9-267d-492a-b6b9-9b6172930342
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.verhuur.field_content_rental
+    - node.type.verhuur
+  module:
+    - user
+id: node.verhuur.teaser
+targetEntityType: node
+bundle: verhuur
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_content_rental: true
+  langcode: true

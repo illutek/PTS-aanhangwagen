@@ -1,0 +1,9 @@
+uuid: 49c4a7fb-041f-47a7-82fb-f229f85aa248
+langcode: nl
+status: true
+dependencies: {  }
+id: text_photo_right
+label: 'Tekst met rechtse foto'
+icon_uuid: null
+description: 'Een tekst veld met een foto aan de rechter kant.'
+behavior_plugins: {  }

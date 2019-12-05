@@ -1,0 +1,34 @@
+uuid: 4a228afb-d6a6-48a4-82f9-3ec5307b11c9
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_img_left.field_para_img_left
+    - field.field.paragraph.text_img_left.field_para_text
+    - image.style.550x400
+    - paragraphs.paragraphs_type.text_img_left
+  module:
+    - image
+    - text
+id: paragraph.text_img_left.default
+targetEntityType: paragraph
+bundle: text_img_left
+mode: default
+content:
+  field_para_img_left:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: 550x400
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_para_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

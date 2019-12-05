@@ -1,0 +1,20 @@
+uuid: 3bf2df00-4596-4222-98a7-30e5670c3a67
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+  module:
+    - path
+id: node.verhuur.path
+field_name: path
+entity_type: node
+bundle: verhuur
+label: URL-alias
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

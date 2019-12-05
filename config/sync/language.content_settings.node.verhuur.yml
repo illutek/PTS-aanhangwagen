@@ -1,0 +1,18 @@
+uuid: 800fd295-f5af-4235-b6dc-68af84908e2c
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.verhuur
+target_entity_type_id: node
+target_bundle: verhuur
+default_langcode: site_default
+language_alterable: true

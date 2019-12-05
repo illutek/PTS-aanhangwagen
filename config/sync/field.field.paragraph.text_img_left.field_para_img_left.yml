@@ -1,0 +1,45 @@
+uuid: 3f4489f8-0bb4-4223-b3ef-6fbdf8c8b0f3
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_img_left
+    - paragraphs.paragraphs_type.text_img_left
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: paragraph.text_img_left.field_para_img_left
+field_name: field_para_img_left
+entity_type: paragraph
+bundle: text_img_left
+label: Afbeelding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images-para-tekst
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 800x800
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

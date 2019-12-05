@@ -1,0 +1,22 @@
+uuid: 22b1bf30-63c0-4478-8677-df332af9ad00
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.sticky
+field_name: sticky
+entity_type: node
+bundle: verhuur
+label: 'Vastgeplakt bovenaan de lijst'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

@@ -1,0 +1,31 @@
+uuid: ff622c0b-6f31-43f1-961b-4d68295f4173
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.verhuur.field_content_rental
+    - node.type.verhuur
+  module:
+    - entity_reference_revisions
+    - user
+id: node.verhuur.default
+targetEntityType: node
+bundle: verhuur
+mode: default
+content:
+  field_content_rental:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

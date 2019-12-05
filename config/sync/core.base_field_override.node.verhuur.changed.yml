@@ -1,0 +1,18 @@
+uuid: 7b3134f4-c283-4fd9-a4cf-17be43267c69
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.changed
+field_name: changed
+entity_type: node
+bundle: verhuur
+label: Gewijzigd
+description: 'Het tijdstip waarop de node voor het laatst werd bewerkt.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

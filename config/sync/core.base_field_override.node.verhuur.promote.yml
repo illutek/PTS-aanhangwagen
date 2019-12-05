@@ -1,0 +1,22 @@
+uuid: 281f2a8e-6a52-456e-abe6-59bb06519b7f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.promote
+field_name: promote
+entity_type: node
+bundle: verhuur
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

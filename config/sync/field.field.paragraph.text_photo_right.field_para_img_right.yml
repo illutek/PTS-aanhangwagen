@@ -1,0 +1,45 @@
+uuid: 12e52d7d-70d7-4542-865f-e647573a076f
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_img_right
+    - paragraphs.paragraphs_type.text_photo_right
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: paragraph.text_photo_right.field_para_img_right
+field_name: field_para_img_right
+entity_type: paragraph
+bundle: text_photo_right
+label: Afbeelding
+description: 'Foto wordt rechts langs de tekst getoond. Op een mobiel wordt deze foto boven de tekst getoond.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: images-para-tekst
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 800x800
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

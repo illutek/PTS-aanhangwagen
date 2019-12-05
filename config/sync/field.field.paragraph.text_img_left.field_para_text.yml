@@ -1,0 +1,21 @@
+uuid: fee73941-0b7c-4239-89fe-bc35ce231d09
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_text
+    - paragraphs.paragraphs_type.text_img_left
+  module:
+    - text
+id: paragraph.text_img_left.field_para_text
+field_name: field_para_text
+entity_type: paragraph
+bundle: text_img_left
+label: Tekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

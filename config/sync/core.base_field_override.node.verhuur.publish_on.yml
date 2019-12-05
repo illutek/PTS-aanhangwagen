@@ -1,0 +1,18 @@
+uuid: 9dbd02a6-f7e5-46a6-aafd-f4c5163691b7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.verhuur
+id: node.verhuur.publish_on
+field_name: publish_on
+entity_type: node
+bundle: verhuur
+label: 'Publiceer op'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
