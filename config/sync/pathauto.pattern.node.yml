@@ -9,18 +9,19 @@ label: node
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  5ba51ca8-cad1-4c08-a0f2-eef80fe765fb:
+  83fc75b1-977b-446c-bb5e-998a3b8a4446:
     id: node_type
     bundles:
       about_us: about_us
       news: news
       page: page
+      parts: parts
       trailers: trailers
       verhuur: verhuur
     negate: false
     context_mapping:
       node: node
-    uuid: 5ba51ca8-cad1-4c08-a0f2-eef80fe765fb
+    uuid: 83fc75b1-977b-446c-bb5e-998a3b8a4446
 selection_logic: and
 weight: -5
 relationships: {  }

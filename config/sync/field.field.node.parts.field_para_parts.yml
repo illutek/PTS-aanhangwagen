@@ -1,0 +1,47 @@
+uuid: 2b30e5ee-c158-456f-8a6e-646236f77226
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_para_parts
+    - node.type.parts
+    - paragraphs.paragraphs_type.photos
+    - paragraphs.paragraphs_type.text_img_left
+    - paragraphs.paragraphs_type.text_photo_right
+  module:
+    - entity_reference_revisions
+id: node.parts.field_para_parts
+field_name: field_para_parts
+entity_type: node
+bundle: parts
+label: Afbeeldingen
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      photos: photos
+      text_img_left: text_img_left
+      text_photo_right: text_photo_right
+    target_bundles_drag_drop:
+      photos:
+        enabled: true
+        weight: 6
+      sub_trailer:
+        weight: 7
+        enabled: false
+      text_img_left:
+        enabled: true
+        weight: 8
+      text_photo_right:
+        enabled: true
+        weight: 9
+      videos:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 3ba8f973-590f-4a25-8a7f-75f18b4b5426
+langcode: nl
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_para_parts
+field_name: field_para_parts
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

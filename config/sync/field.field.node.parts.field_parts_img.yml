@@ -1,0 +1,45 @@
+uuid: 26dc154f-4616-41d2-86bf-204b90e7e4bb
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_parts_img
+    - node.type.parts
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.parts.field_parts_img
+field_name: field_parts_img
+entity_type: node
+bundle: parts
+label: Afbeelding
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: parts-img
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 800x800
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

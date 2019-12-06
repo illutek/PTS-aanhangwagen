@@ -1,0 +1,34 @@
+uuid: ce192fdf-12aa-4c02-9512-0c8f77dee27b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.parts.body
+    - field.field.node.parts.field_para_parts
+    - field.field.node.parts.field_parts_img
+    - node.type.parts
+  module:
+    - text
+    - user
+id: node.parts.teaser
+targetEntityType: node
+bundle: parts
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_para_parts: true
+  field_parts_img: true
+  langcode: true

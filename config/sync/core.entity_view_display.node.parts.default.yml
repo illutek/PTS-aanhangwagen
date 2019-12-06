@@ -1,0 +1,52 @@
+uuid: 8585cd8e-983f-47f9-a277-1bab90ac3a64
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.parts.body
+    - field.field.node.parts.field_para_parts
+    - field.field.node.parts.field_parts_img
+    - image.style.550x400
+    - node.type.parts
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+    - user
+id: node.parts.default
+targetEntityType: node
+bundle: parts
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_para_parts:
+    type: entity_reference_revisions_entity_view
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_parts_img:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: 550x400
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

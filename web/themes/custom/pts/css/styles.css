@@ -820,4 +820,16 @@ strong {
   -ms-flex-order: 1;
   order: 1; }
 
+.node-full-parts__content-wrap {
+  margin-bottom: 3rem; }
+
+.node-full-parts__img {
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 37.5em) {
+    .node-full-parts__img {
+      float: left;
+      width: 50%;
+      max-width: 35rem;
+      margin-right: 2rem; } }
+
 /*# sourceMappingURL=styles.css.map */
