@@ -6,7 +6,7 @@
 
     &__content {
         padding-bottom: 3rem;
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid rgba($gray, .4);
         margin-bottom: $margin-b;
 
         display: flex;
@@ -43,15 +43,14 @@
         margin-bottom: $margin-b;
     }
 
-    &__photo {}
+    &__photo {
+        margin-bottom: $margin-b;
+    }
 
     &__photo-items {
 
         @include mq(tablet) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
+            @include paragraph-items();
         }
     }
 
@@ -68,10 +67,7 @@
     &__video-items {
 
         @include mq(tablet) {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
+            @include paragraph-items();
         }
 
     }

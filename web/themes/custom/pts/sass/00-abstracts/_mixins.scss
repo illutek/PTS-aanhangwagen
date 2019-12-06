@@ -71,3 +71,12 @@ $breakpoints: (
       display: inline-block;
     }
 }
+
+@mixin paragraph-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  
+}
