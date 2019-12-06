@@ -1,14 +1,14 @@
-uuid: 9108961b-7339-4a5e-b71a-02a300d4f93a
+uuid: ae4c4f82-28a5-43ad-ba1d-8770d6c00dea
 langcode: nl
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_para_text
+    - field.storage.paragraph.field_field_para_text_r
     - paragraphs.paragraphs_type.text_photo_right
   module:
     - text
-id: paragraph.text_photo_right.field_para_text
-field_name: field_para_text
+id: paragraph.text_photo_right.field_field_para_text_r
+field_name: field_field_para_text_r
 entity_type: paragraph
 bundle: text_photo_right
 label: Tekst

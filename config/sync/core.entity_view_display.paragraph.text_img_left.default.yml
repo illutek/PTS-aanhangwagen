@@ -16,7 +16,7 @@ bundle: text_img_left
 mode: default
 content:
   field_para_img_left:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       image_style: 550x400
@@ -25,7 +25,7 @@ content:
     type: image
     region: content
   field_para_text:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }

@@ -1,12 +1,33 @@
 // ////////////////////////////////////
 // @@ PARAGRAPH-TYPE text-img-right
 // ////////////////////////////////////
-// tir = text-img-right
+// t-img-r = text-img-right
 
-.para-tir {
+.para-t-img-r {
 
     &__wrap {
-        margin-bottom: $margin-bb;
+        @include para-t-img();
+    }
+
+    &__img-field {
+        order: 0;
+        margin-bottom: $margin-b;
+
+        @include mq(tablet){
+            float: right;
+            margin-left: 1.5rem;
+            width: 35%;
+            max-width: 37.5rem;
+        }
     }
 
 }
+
+ // field used on img-left and img-right
+ .para-r {
+    // field used on img-left and img-right
+    &__text-field {
+        order: 1;
+    }
+
+ }

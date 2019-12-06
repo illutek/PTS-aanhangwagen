@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.photos
     - paragraphs.paragraphs_type.text_img_left
     - paragraphs.paragraphs_type.text_photo_right
+    - paragraphs.paragraphs_type.videos
   module:
     - entity_reference_revisions
 id: node.verhuur.field_content_rental
@@ -28,6 +29,7 @@ settings:
       text_img_left: text_img_left
       text_photo_right: text_photo_right
       photos: photos
+      videos: videos
     target_bundles_drag_drop:
       sub_trailer:
         weight: -11
@@ -42,6 +44,6 @@ settings:
         enabled: true
         weight: -8
       videos:
+        enabled: true
         weight: -7
-        enabled: false
 field_type: entity_reference_revisions

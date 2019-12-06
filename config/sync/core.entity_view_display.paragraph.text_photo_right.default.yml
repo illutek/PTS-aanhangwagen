@@ -3,8 +3,8 @@ langcode: nl
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text_photo_right.field_field_para_text_r
     - field.field.paragraph.text_photo_right.field_para_img_right
-    - field.field.paragraph.text_photo_right.field_para_text
     - image.style.550x400
     - paragraphs.paragraphs_type.text_photo_right
   module:
@@ -15,6 +15,13 @@ targetEntityType: paragraph
 bundle: text_photo_right
 mode: default
 content:
+  field_field_para_text_r:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_para_img_right:
     weight: 1
     label: hidden
@@ -23,12 +30,5 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  field_para_text:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
 hidden: {  }

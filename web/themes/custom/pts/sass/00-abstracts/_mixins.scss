@@ -59,3 +59,15 @@ $breakpoints: (
     @include box-shadow;
   }
 }
+
+@mixin para-t-img {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  margin-bottom: $margin-bb;
+  border-bottom: 1px rgba($gray, .4) solid;
+  width: 100%;
+    @include mq(tablet){
+      display: inline-block;
+    }
+}

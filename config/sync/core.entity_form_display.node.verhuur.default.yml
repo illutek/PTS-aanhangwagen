@@ -21,15 +21,22 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_content_rental:
-    type: entity_reference_paragraphs
+    type: paragraphs
     weight: 121
     settings:
       title: Paragraaf
       title_plural: Paragrafen
-      edit_mode: open
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: ''
+      default_paragraph_type: _none
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
     third_party_settings: {  }
     region: content
   langcode:
@@ -79,6 +86,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

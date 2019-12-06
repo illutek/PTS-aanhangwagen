@@ -1,12 +1,30 @@
 // ////////////////////////////////////
 // @@ PARAGRAPH-TYPE text-img-left
 // ////////////////////////////////////
-// til = text-img-left
+// t-img-l = text-img-left
 
-.para-til {
+.para-t-img-l {
 
     &__wrap {
-        margin-bottom: $margin-bb;
+        @include para-t-img();
+    }
+
+    &__img-field {
+        order: 2;
+
+        @include mq(tablet){
+            float: left;
+            margin-right: 1.5rem;
+            width: 35%;
+            max-width: 37.5rem;
+        }
+    }
+
+    .para {
+        
+        &__text-field {
+            order: 1;
+        }
     }
 
 }
