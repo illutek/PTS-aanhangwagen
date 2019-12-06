@@ -3,31 +3,10 @@
 // ////////////////////////
 
 .node-trailer {
-    &__content {
-        display: flex;
-        flex-direction: column;
-
-        @include mq(tablet) {
-            flex-direction: row;
-        }
-    }
+    &__content {}
 
     &__body {
-        order: 2;
         margin-bottom: $margin-b;
-
-        @include mq(tablet) {
-            order: 1;
-        }
     }
 
-    &__img {
-        order: 1;
-        margin-bottom: $margin-b;
-
-        @include mq(tablet) {
-            order: 2;
-            margin-left: 2rem;
-        }
-    }
 }

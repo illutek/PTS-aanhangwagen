@@ -11,20 +11,6 @@
         margin-bottom: $margin-b;
     }
 
-   
-
     &__content {}
 
-    &__img {
-
-        margin-bottom: $margin-b;
-
-        @include mq(tablet) {
-            float: left;
-            width: 50%;
-            max-width: 35rem;
-            margin-right: 2rem;
-        }
-        
-    }
 }

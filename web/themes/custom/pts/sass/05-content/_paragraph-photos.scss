@@ -1,0 +1,24 @@
+// /////////////////////////
+// @@ PARAGRAPH PHOTOS 
+// ////////////////////////
+
+.paragraph-photos {
+    margin-bottom: $margin-b;
+
+    &__items {
+        @include mq(tablet) {
+            @include paragraph-items();
+        }
+
+    }
+
+    &__item {
+        margin-bottom: $margin-b;
+
+        @include mq(tablet) {
+            width: 47%;
+            height: auto;
+            margin: 1rem;
+        }
+    }
+}

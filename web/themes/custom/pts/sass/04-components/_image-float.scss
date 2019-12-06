@@ -1,0 +1,24 @@
+// /////////////////////////
+// @@ IMAGE FLOAT
+// ////////////////////////
+
+.c-image {
+    margin-bottom: $margin-b;
+    
+    @include mq(tablet) {
+        width: 45%;
+        max-width: 37.5rem;
+    
+        &--left {
+            float: left;
+            margin-right: 2rem;
+        }
+    
+    
+        &--right {
+            float: right;
+            margin-left: 2rem;
+        }
+    }
+   
+}

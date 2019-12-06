@@ -2,6 +2,7 @@
 // @@ PARAGRAPH-TYPE text-img-left
 // ////////////////////////////////////
 // t-img-l = text-img-left
+// need this to change the order
 
 .para-t-img-l {
 
@@ -11,13 +12,6 @@
 
     &__img-field {
         order: 2;
-
-        @include mq(tablet){
-            float: left;
-            margin-right: 1.5rem;
-            width: 35%;
-            max-width: 37.5rem;
-        }
     }
 
     .para {
