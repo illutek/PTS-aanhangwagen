@@ -49,12 +49,18 @@ ol {
   margin-left: 0;
   margin-right: 0;
   padding-left: 40px;
+  overflow: hidden;
 }
 
 ul {
   list-style-type: circle;
+  overflow: hidden;
 }
 
 li {
   margin-left: 3.5rem;
+
+  &:last-child {
+    margin-bottom: 1rem;
+  }
 }

@@ -80,13 +80,17 @@ ol {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px; }
+  padding-left: 40px;
+  overflow: hidden; }
 
 ul {
-  list-style-type: circle; }
+  list-style-type: circle;
+  overflow: hidden; }
 
 li {
   margin-left: 3.5rem; }
+  li:last-child {
+    margin-bottom: 1rem; }
 
 html {
   font-family: "Raleway", sans-serif; }
