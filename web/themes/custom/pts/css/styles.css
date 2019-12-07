@@ -203,12 +203,8 @@ strong {
     flex-direction: column; }
   .r-overlay-contact__close {
     padding-top: 1rem;
-    padding-right: 6rem;
-    height: 20rem;
-    width: 20rem;
-    -ms-flex-item-align: end;
-    align-self: end;
-    text-align: right; }
+    padding-left: 2rem;
+    height: 20rem; }
   .r-overlay-contact__body {
     width: 60vw;
     -ms-flex-item-align: center;
