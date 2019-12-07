@@ -8,7 +8,6 @@
   border: 1px solid $dark-gray;
   text-align: center;
   transition: all 1.2s;
-  // margin-top: -1.6rem;
   cursor: pointer;
 
   &--open {
@@ -21,7 +20,7 @@
       &::before,
       &::after {
         height: 1px;
-        background-color: $gray;
+        background-color: $dark-gray;
         display: inline-block;
         transition: all $trans-speed;
       }
