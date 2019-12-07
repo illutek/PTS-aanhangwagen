@@ -1,12 +1,11 @@
 {# 
 /**
-* only visibule on mobile on page-front and page
+* only Visible on mobile on page-front and page
 * 
 */
   #}
 
 <div class="r-overlay-contact">
-
   <div class="r-overlay-contact__inner">
 
     <div class="r-overlay-contact__close js-close-contact">
@@ -14,10 +13,10 @@
     </div>
 
     <div class="r-overlay-contact__body">
-      {# block-region translatable with custom-block #}
+      {# block-region content-type info #}
         {{ page.contactoverlay}}
         {# not in a content type because of extra security, also does not need to be translated #}
-           <script>mail("info","pts",0,"","")</script>
+        <script>mail("info","pts",0,"","")</script>
     </div>
 
   </div>

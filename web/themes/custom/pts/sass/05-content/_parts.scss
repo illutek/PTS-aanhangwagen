@@ -2,7 +2,14 @@
 // @@ PARTS
 // ////////////////////////
 
-.node-teaser-parts {}
+.node-teaser-parts {
+
+    &__title {
+        a {
+            color: $clr-parts;
+        }
+    }
+}
 
 
 .node-full-parts {
