@@ -381,7 +381,8 @@ strong {
   display: -ms-flexbox;
   display: flex; }
   .c-language__items .is-active {
-    border-bottom: 1px solid #f7f7f2; }
+    border-bottom: 1px solid #f7f7f2;
+    color: #f7f7f2; }
 
 .c-language__item {
   margin-left: 0; }
@@ -448,9 +449,10 @@ strong {
   flex-wrap: nowrap; }
 
 .c-main-menu__item {
-  margin-left: 0; }
+  margin-left: 0;
+  font-size: 2rem; }
   .c-main-menu__item:not(:last-child) {
-    padding-right: 1rem; }
+    padding-right: 1.5rem; }
 
 .c-main-menu__link {
   text-decoration: none;
@@ -459,7 +461,8 @@ strong {
     color: #8f9491; }
 
 .is-active {
-  border-bottom: 1px solid #e1e6e1; }
+  border-bottom: 1px solid #e1e6e1;
+  color: #8f9491; }
 
 .c-close-btn {
   position: relative;

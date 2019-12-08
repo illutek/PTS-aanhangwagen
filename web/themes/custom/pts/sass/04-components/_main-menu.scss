@@ -14,8 +14,11 @@
 
     &__item {
         margin-left: 0;
+        font: {
+            size: 2rem;
+        };
         &:not(:last-child) {
-            padding-right: 1rem;
+            padding-right: 1.5rem;
         }
     }
 
@@ -31,4 +34,5 @@
 
 .is-active {
     border-bottom: 1px solid $gray;
+    color: $dark-gray;
 }
