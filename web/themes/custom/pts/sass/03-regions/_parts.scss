@@ -1,19 +1,22 @@
 // /////////////////////////
-// @@ REGIONS DIR
+// @@ REGION PARTS
 // ////////////////////////
 
-.parts {
-  color: $clr-parts;
+.r-parts {
  
   &__inner {
     position: relative;
     background-color: $gray;
     padding: 4rem;
     margin-bottom: $margin-b;
+
+    @include mq(tablet) {
+      margin-bottom: 0;
+    }
   }
 
-  &__body {
-    padding: 1rem 0;
-  }
+  // &__body {
+  //   padding: 1rem 0;
+  // }
 
 }

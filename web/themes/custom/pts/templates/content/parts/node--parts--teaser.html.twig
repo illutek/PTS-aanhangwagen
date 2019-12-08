@@ -18,7 +18,6 @@
 {%
   set classes = [
     'node',
-    'node-link',
     'node-teaser-parts',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -47,7 +46,7 @@
   </div>
 
     <div class="c-readmore__region">
-      <div class="c-readmore c-readmore--white">{{ '>>>' }}</div>
+      <div class="c-readmore">{{ '>>>' }}</div>
     </div>
 
 </a>

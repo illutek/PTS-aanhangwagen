@@ -1,39 +1,18 @@
 // /////////////////////////
-// @@ HIGHLIGHTED 
+// @@ HIGHLIGHTED REGION
 // ////////////////////////
 
-.highlighted {
+// The trailers shown here are models that get their specific formatting via teaser-extra.
+// the accent color for the caption background is set on _trailers-teaser.scss
+// as a BEM modifier .trailer-model__caption--accent
+
+.r-highlighted {
 
     @include mq(tablet) {
+        display: flex;
+        align-items: center;
         border: 1px solid $gray;
         padding: 2rem;
     }
 
-    &__items {
-        @include mq(tablet) {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1rem;
-        }
-    }
-   
-    &__item {
-        position: relative;
-        margin-bottom: $margin-b;
-    }
-
-    &__img {
-
-    }
-
-    &__caption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem 2rem;
-        background-color: $accent;
-    }
-
 }
-
