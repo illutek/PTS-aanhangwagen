@@ -18,6 +18,7 @@
 {%
   set classes = [
     'node',
+    'node-link',
     'node-teaser-parts',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
@@ -27,12 +28,12 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<article{{ attributes.addClass(classes) }}>
+<a href="{{ url }}" {{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
   {% if label and not page %}
     <h2{{ title_attributes }} class="node-teaser-parts__title">
-      <a href="{{ url }}" class="c-readmore c-readmore--white">{{ label }}</a>
+      {{ label }}
     </h2>
   {% endif %}
   {{ title_suffix }}
@@ -46,9 +47,7 @@
   </div>
 
     <div class="c-readmore__region">
-    {% if bodytext|length > textlenght %}
-      <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
-    {% endif %}
-  </div>
+      <div class="c-readmore c-readmore--white">{{ '>>>' }}</div>
+    </div>
 
-</article>
+</a>
