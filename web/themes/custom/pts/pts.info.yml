@@ -8,6 +8,7 @@ version: 1.0.0
 
 libraries:
   - pts/globalstyle
+  - pts/fonts
   - pts/mobile
   - pts/email
 
