@@ -746,6 +746,7 @@ strong {
 
 .node-more-trailers {
   background-color: #e8492f;
+  margin-bottom: 3rem;
   padding: 1.5rem 0;
   font-size: 2rem; }
   .node-more-trailers__content {
