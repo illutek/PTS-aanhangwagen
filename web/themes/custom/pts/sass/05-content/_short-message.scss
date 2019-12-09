@@ -1,0 +1,14 @@
+// /////////////////////////
+// @@ SHORT MESSAGE
+// ////////////////////////
+
+.node-short-message {
+
+    background-color: $gray;
+    padding: 4rem;
+    margin-bottom: $margin-b;
+
+    &__content {
+        color: $black;
+    }
+}

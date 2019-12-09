@@ -1,0 +1,25 @@
+uuid: 121ca999-b6bb-4557-9f80-efa8658648ae
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.short_message.body
+    - node.type.short_message
+  module:
+    - text
+    - user
+id: node.short_message.default
+targetEntityType: node
+bundle: short_message
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  links: true

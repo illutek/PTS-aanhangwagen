@@ -1,0 +1,31 @@
+uuid: dbcbc197-e466-4b0d-a92c-288bbf448692
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.short_message.body
+    - node.type.short_message
+  module:
+    - text
+    - user
+id: node.short_message.teaser
+targetEntityType: node
+bundle: short_message
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

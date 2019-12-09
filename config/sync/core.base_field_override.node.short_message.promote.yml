@@ -1,0 +1,22 @@
+uuid: efc03241-a309-4587-b929-62f47d20ba31
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.short_message
+id: node.short_message.promote
+field_name: promote
+entity_type: node
+bundle: short_message
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

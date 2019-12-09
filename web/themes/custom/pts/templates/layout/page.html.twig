@@ -20,14 +20,20 @@
 {# end region r-top-header #}
 
 <div class="container">
-{# start region r-header #}
-  {% include directory ~ '/templates/partials/shared/header.html.twig' %}
+
+  {# start region r-header #}
+    {% include directory ~ '/templates/partials/shared/header.html.twig' %}
   {# end region r-header #}
 
-    <div class="page-content">
-      {{ page.content }}
-    </div>
-    {# /.page-content #}
+  {# start short message #}
+    {% include directory ~ '/templates/partials/shared/short-message.html.twig' %}
+  {# end short message #}
+  
+  {# start page content #}
+  <div class="page-content">
+    {{ page.content }}
+  </div>
+  {# enhd page content #}
   
 </div>
 {# end container  #}

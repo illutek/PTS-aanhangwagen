@@ -1,0 +1,23 @@
+uuid: 2f449ae7-91f5-435f-a185-3dddda76a4aa
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.short_message
+  module:
+    - text
+id: node.short_message.body
+field_name: body
+entity_type: node
+bundle: short_message
+label: Bericht
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

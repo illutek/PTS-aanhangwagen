@@ -1,0 +1,18 @@
+uuid: 47d9037e-a739-4105-8186-d4db4931b840
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.short_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.short_message
+target_entity_type_id: node
+target_bundle: short_message
+default_langcode: site_default
+language_alterable: true
