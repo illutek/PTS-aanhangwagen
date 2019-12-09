@@ -1,0 +1,27 @@
+// /////////////////////////
+// @@ MORE TRAILERS LINK
+// ////////////////////////
+
+// This block view is shown below the trailers on the home page (extra-teaser}.
+// node--info--ectra-teaser.html.twig
+
+.node-more-trailers {
+    background-color: $accent;
+    padding: 1.5rem 0;
+    font: {
+        size: 2rem;
+    };
+
+    &__content {
+        text-align: center;
+
+         a {
+        color: $white;
+        text-decoration: none;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+   
+}

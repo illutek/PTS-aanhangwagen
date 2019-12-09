@@ -1,21 +1,21 @@
-uuid: 67214003-93e0-415c-ab3c-e8fddaaa79d5
+uuid: 79df4cb4-085e-4a6e-97bc-a770b7bd22f2
 langcode: nl
 status: true
 dependencies:
   config:
-    - views.view.trailers_teaser
+    - views.view.more_trailers_models
   module:
     - views
   theme:
     - pts
-id: views_block__trailers_teaser_block_1
+id: views_block__more_trailers_models_block_1
 theme: pts
 region: trailers
-weight: -11
+weight: -10
 provider: null
-plugin: 'views_block:trailers_teaser-block_1'
+plugin: 'views_block:more_trailers_models-block_1'
 settings:
-  id: 'views_block:trailers_teaser-block_1'
+  id: 'views_block:more_trailers_models-block_1'
   label: ''
   provider: views
   label_display: '0'

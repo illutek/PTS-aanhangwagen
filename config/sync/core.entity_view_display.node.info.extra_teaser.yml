@@ -1,0 +1,39 @@
+uuid: e2777309-db06-4b5a-99a1-86510a536ac7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.extra_teaser
+    - field.field.node.info.body
+    - field.field.node.info.field_typof_info
+    - node.type.info
+  module:
+    - options
+    - text
+    - user
+id: node.info.extra_teaser
+targetEntityType: node
+bundle: info
+mode: extra_teaser
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_typof_info:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

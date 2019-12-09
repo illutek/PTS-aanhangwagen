@@ -1,18 +1,18 @@
-uuid: 3a2066c6-07ee-441c-923d-b799d721f495
+uuid: ba53a1d7-1d4a-42a9-abe9-d10b0c03a9a9
 langcode: nl
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
-    - node.type.trailers
-    - system.menu.main
+    - core.entity_view_mode.node.extra_teaser
+    - node.type.info
   module:
     - node
+    - options
     - user
-id: trailers_teaser_page
-label: trailers-teaser-page
+id: more_trailers_models
+label: 'Meer modellen aanhangwagens'
 module: views
-description: 'Alle trailer modelen op pagina'
+description: 'op de home pagina onder de trailers'
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -51,14 +51,15 @@ display:
       pager:
         type: none
         options:
-          items_per_page: null
+          items_per_page: 0
           offset: 0
       style:
         type: default
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: extra_teaser
       fields:
         title:
           id: title
@@ -126,13 +127,54 @@ display:
           table: node_field_data
           field: type
           value:
-            trailers: trailers
+            info: info
           entity_type: node
           entity_field: type
           plugin_id: bundle
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_typof_info_value:
+          id: field_typof_info_value
+          table: node__field_typof_info
+          field: field_typof_info_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          operator: or
+          value:
+            meer: meer
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          plugin_id: list_field
         langcode:
           id: langcode
           table: node_field_data
@@ -151,6 +193,8 @@ display:
             description: ''
             use_operator: false
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
             identifier: ''
             required: false
             remember: false
@@ -158,8 +202,6 @@ display:
             remember_roles:
               authenticated: authenticated
             reduce: false
-            operator_limit_selection: false
-            operator_list: {  }
           is_grouped: false
           group_info:
             label: ''
@@ -176,19 +218,22 @@ display:
           entity_field: langcode
           plugin_id: language
       sorts:
-        random:
-          id: random
-          table: views
-          field: random
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          order: DESC
+          entity_type: node
+          entity_field: created
+          plugin_id: date
           relationship: none
           group_type: group
           admin_label: ''
-          order: ASC
           exposed: false
           expose:
-            label: Willekeurig
-          plugin_id: random
-      title: 'Alle aanhangwagen modellen'
+            label: ''
+          granularity: second
+      title: 'Meer modellen aanhangwagens'
       header: {  }
       footer: {  }
       empty: {  }
@@ -196,32 +241,23 @@ display:
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
     position: 1
     display_options:
       display_extenders: {  }
-      path: aanhangwagen-modellen
-      menu:
-        type: normal
-        title: Aanhangwagens
-        description: ''
-        expanded: false
-        parent: ''
-        weight: -49
-        context: '0'
-        menu_name: main
+      block_description: 'more-trailers-models message'
     cache_metadata:
-      max-age: 0
+      max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'

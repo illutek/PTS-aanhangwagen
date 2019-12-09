@@ -23,7 +23,7 @@ third_party_settings:
     unpublish_revision: false
 name: Info
 type: info
-description: 'Informatie, dit zijn de contactgegevens en openingsuren tot op heden, gefilterd via taxonomie.'
+description: 'Informatie, dit zijn de contactgegevens en openingsuren gefilterd op een veld ''Soort info'', maar ook de meer trailers tekst valt hier onder.'
 help: ''
 new_revision: false
 preview_mode: 0

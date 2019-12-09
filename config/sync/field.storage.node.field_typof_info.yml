@@ -20,6 +20,9 @@ settings:
     -
       value: open
       label: Openingsuren
+    -
+      value: meer
+      label: 'Meer modellen'
   allowed_values_function: ''
 module: options
 locked: false
