@@ -565,9 +565,6 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   -webkit-box-orient: vertical;
@@ -584,6 +581,9 @@ strong {
 .c-footer-menu__item {
   margin-left: 0;
   font-size: 1rem; }
+  @media screen and (min-width: 37.5em) {
+    .c-footer-menu__item:not(:first-child) {
+      padding-left: 1.5rem; } }
   .c-footer-menu__item:not(:last-child) {
     padding-right: 1.5rem;
     position: relative; }
