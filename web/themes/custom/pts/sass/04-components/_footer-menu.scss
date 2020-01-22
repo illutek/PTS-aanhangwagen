@@ -1,0 +1,59 @@
+// //////////////////////////////
+// @@ FOOTER MENU
+// //////////////////////////////
+
+.c-footer-menu {
+
+    &__items {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        @include mq(tablet) {
+            flex-direction: row;
+
+        }
+
+    }
+
+    &__item {
+        margin-left: 0;
+        font: {
+            size: 1rem;
+        };
+        &:not(:last-child) {
+            padding-right: 1.5rem;
+            position: relative;
+
+            @include mq(tablet) {
+                &::after {
+                    content: "";
+                    display: block;
+                    background-color: $white;
+                    height: 18px;
+                    width: 1px;
+                    right: 0;
+                    top: 0;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $dark-gray;
+        }
+    }
+}
+
+.is-active {
+    border-bottom: 1px solid $gray;
+    color: $white;
+}

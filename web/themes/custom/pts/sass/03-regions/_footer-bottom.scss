@@ -1,0 +1,25 @@
+// /////////////////////////
+// @@ FOOTER-BOTTOM
+// ////////////////////////
+
+.r-footer-bottom {
+
+    padding: 2rem 0;
+    background-color: $accent;
+    color: $white;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__copy {
+        margin-bottom: $margin-b;
+
+    }
+
+    &__menu {
+
+    }
+}
