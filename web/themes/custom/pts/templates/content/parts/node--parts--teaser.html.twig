@@ -27,15 +27,11 @@
   ]
 %}
 {{ attach_library('classy/node') }}
-<a href="{{ url }}" {{ attributes.addClass(classes) }}>
+<article {{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }} class="node-teaser-parts__title">
-      {{ label }}
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+  <h2 class="c-readmore c-readmore__link--black" {{ title_attributes }}>
+      <a href="{{ url }}">{{ label }}</a>
+  </h2>
 
 
   <div{{ content_attributes.addClass('node__content') }}>
@@ -45,8 +41,10 @@
 
   </div>
 
-    <div class="c-readmore__region">
-      <div class="c-readmore">{{ '>>>' }}</div>
-    </div>
+  <div class="c-readmore__region">
+    {% if bodytext|length > textlenght %}
+      {{ content|without('body') }}
+    {% endif %}
+  </div>
 
-</a>
+</article>

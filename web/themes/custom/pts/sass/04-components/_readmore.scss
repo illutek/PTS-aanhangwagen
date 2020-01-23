@@ -3,14 +3,40 @@
 // ////////////////////////
 
 .c-readmore {
-    text-decoration: none;
-    cursor: pointer;
 
-    &__region {
-        text-align: right;
-    }
+    a {
+        text-decoration: none;
+    }       
 
     &--white {
-        color: $white;
+        a {
+            color: $white;
+
+            &:hover {
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+
+    &__links {
+        list-style: none;
+    }
+
+    &__link {
+         
+    }
+
+    &__link--white {
+        
+    }
+
+    &__link--black {
+        a {
+            color: $black;
+        
+            &:hover {
+                border-bottom: 1px solid $black;
+            }
+        }
     }
 }

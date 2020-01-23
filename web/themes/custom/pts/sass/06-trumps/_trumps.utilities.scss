@@ -2,7 +2,15 @@
 // @@ UTILITIES
 // ////////////////////////
 
-.u-center-content {
+.u-content {
+    
     display: flex;
-    justify-content: center;
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--right {
+        justify-content: right;
+    }
 }

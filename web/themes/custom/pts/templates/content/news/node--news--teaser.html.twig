@@ -31,8 +31,8 @@
 
   {{ title_prefix }}
   {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" class="c-readmore c-readmore--white">{{ label }}</a>
+    <h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
+      <a href="{{ url }}">{{ label }}</a>
     </h2>
   {% endif %}
   {{ title_suffix }}
@@ -47,9 +47,9 @@
      </p>
   </div>
 
-  <div class="c-readmore__region">
+  <div class="c-readmore c-readmore--white u-content u-content--right">
     {% if bodytext|length > textlenght %}
-      <a href="{{ url }}" class="c-readmore c-readmore--white">{{ '>>>' }}</a>
+      {{ content|without('body')|without('field_news_img') }}
     {% endif %}
   </div>
 
