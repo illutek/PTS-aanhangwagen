@@ -20,6 +20,12 @@
         &:not(:last-child) {
             padding-right: 1.5rem;
         }
+
+        .is-active {
+            border-bottom: 1px solid $black;
+            color: $black;
+        }
+
     }
 
     &__link {
@@ -30,9 +36,4 @@
             color: $dark-gray;
         }
     }
-}
-
-.is-active {
-    border-bottom: 1px solid $gray;
-    color: $dark-gray;
 }

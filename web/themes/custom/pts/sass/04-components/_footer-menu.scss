@@ -48,6 +48,11 @@
                 }
             }
         }
+
+        .is-active {
+            border-bottom: 1px solid $gray;
+            color: $white;
+        }
     }
 
     &__link {
@@ -58,9 +63,4 @@
             color: $dark-gray;
         }
     }
-}
-
-.is-active {
-    border-bottom: 1px solid $gray;
-    color: $white;
 }
