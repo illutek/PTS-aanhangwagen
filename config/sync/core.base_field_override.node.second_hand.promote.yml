@@ -1,0 +1,22 @@
+uuid: f9104179-7250-40d4-9ecf-eb5f66b4783d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.second_hand
+id: node.second_hand.promote
+field_name: promote
+entity_type: node
+bundle: second_hand
+label: 'Aangeraden op de voorpagina'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

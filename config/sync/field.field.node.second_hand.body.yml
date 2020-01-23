@@ -1,0 +1,23 @@
+uuid: 194f98b3-c04f-450e-bac2-15b5a9fb6ed2
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.second_hand
+  module:
+    - text
+id: node.second_hand.body
+field_name: body
+entity_type: node
+bundle: second_hand
+label: Info
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

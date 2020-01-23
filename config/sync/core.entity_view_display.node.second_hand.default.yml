@@ -1,0 +1,40 @@
+uuid: 36b20215-5641-4b9b-982d-d36ea0da2062
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.second_hand.body
+    - field.field.node.second_hand.field_secondhand_img
+    - node.type.second_hand
+  module:
+    - image
+    - text
+    - user
+id: node.second_hand.default
+targetEntityType: node
+bundle: second_hand
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_secondhand_img:
+    weight: 102
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

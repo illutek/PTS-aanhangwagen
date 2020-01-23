@@ -1,0 +1,38 @@
+uuid: 4eeaee74-1de8-4fc2-a372-b91b89bf8e2d
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secondhand_img
+    - node.type.second_hand
+  module:
+    - image
+id: node.second_hand.field_secondhand_img
+field_name: field_secondhand_img
+entity_type: node
+bundle: second_hand
+label: Afbeelding
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'second-hand/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 1000x800
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

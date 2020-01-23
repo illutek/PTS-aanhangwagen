@@ -1,0 +1,11 @@
+uuid: 0a59cb9b-5c9f-4203-9cfb-3f1f60190e11
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.second_hand
+id: node.second_hand
+target_entity_type_id: node
+target_bundle: second_hand
+default_langcode: site_default
+language_alterable: false

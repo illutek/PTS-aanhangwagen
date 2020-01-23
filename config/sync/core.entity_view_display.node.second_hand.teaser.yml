@@ -1,0 +1,33 @@
+uuid: 0e8b6f7d-8c57-42ca-b926-687b350e304a
+langcode: nl
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.second_hand.body
+    - field.field.node.second_hand.field_secondhand_img
+    - node.type.second_hand
+  module:
+    - text
+    - user
+id: node.second_hand.teaser
+targetEntityType: node
+bundle: second_hand
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_secondhand_img: true
+  langcode: true

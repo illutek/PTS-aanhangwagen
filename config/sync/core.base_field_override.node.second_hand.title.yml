@@ -1,0 +1,18 @@
+uuid: d46de8d3-8846-422d-aa68-b4bea62a618b
+langcode: nl
+status: true
+dependencies:
+  config:
+    - node.type.second_hand
+id: node.second_hand.title
+field_name: title
+entity_type: node
+bundle: second_hand
+label: 'Type aanhangwagen'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
