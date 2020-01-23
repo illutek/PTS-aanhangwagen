@@ -18,19 +18,7 @@
         }
     }
 
-    &__links {
-        list-style: none;
-    }
-
-    &__link {
-         
-    }
-
-    &__link--white {
-        
-    }
-
-    &__link--black {
+    &--black {
         a {
             color: $black;
         
@@ -38,5 +26,14 @@
                 border-bottom: 1px solid $black;
             }
         }
+
+    }
+
+    &__links {
+        list-style: none;
+    }
+
+    &__link {
+        margin-left: 0;
     }
 }

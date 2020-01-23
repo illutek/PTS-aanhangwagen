@@ -544,13 +544,16 @@ strong {
   .c-readmore--white a:hover {
     border-bottom: 1px solid #f7f7f2; }
 
+.c-readmore--black a {
+  color: #0a100d; }
+  .c-readmore--black a:hover {
+    border-bottom: 1px solid #0a100d; }
+
 .c-readmore__links {
   list-style: none; }
 
-.c-readmore__link--black a {
-  color: #0a100d; }
-  .c-readmore__link--black a:hover {
-    border-bottom: 1px solid #0a100d; }
+.c-readmore__link {
+  margin-left: 0; }
 
 .c-email__link {
   color: #f7f7f2; }

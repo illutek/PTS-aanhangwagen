@@ -28,7 +28,7 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  <h2 class="c-readmore__link c-readmore__link--white" {{ title_attributes }}>
+  <h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
       <a href="{{ url }}">{{ label }}</a>
   </h2>
 
@@ -43,7 +43,7 @@
 
   
   
-  <div class="c-readmore__region">
+  <div class="c-readmore c-readmore--white">
     {% if bodytext|length > textlenght %}
       {{ content|without('body')|without('field_aboutus_img') }}
     {% endif %}
