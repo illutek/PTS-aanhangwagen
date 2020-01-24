@@ -2,8 +2,8 @@
 // @@ UTILITIES
 // ////////////////////////
 
-.u-content {
-    
+.u-flex-content {
+
     display: flex;
 
     &--center {
@@ -13,4 +13,8 @@
     &--right {
         justify-content: right;
     }
+}
+
+.u-list-item-right {
+    float: right;
 }

@@ -89,8 +89,6 @@ ul {
 
 li {
   margin-left: 3.5rem; }
-  li:last-child {
-    margin-bottom: 1rem; }
 
 html {
   font-family: "Raleway", sans-serif; }
@@ -840,17 +838,20 @@ strong {
   .node-short-message__content {
     color: #0a100d; }
 
-.u-content {
+.u-flex-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .u-content--center {
+  .u-flex-content--center {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .u-content--right {
+  .u-flex-content--right {
     -webkit-box-pack: right;
     -ms-flex-pack: right;
     justify-content: right; }
+
+.u-list-item-right {
+  float: right; }
 
 /*# sourceMappingURL=styles.css.map */
