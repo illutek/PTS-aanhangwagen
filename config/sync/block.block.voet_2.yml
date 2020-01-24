@@ -1,6 +1,6 @@
-uuid: 10323c59-2b27-4ee0-8ce1-b1dbdd81b786
+uuid: 63def1f9-4b6d-4b22-8978-ad51e7e51521
 langcode: nl
-status: false
+status: true
 dependencies:
   config:
     - system.menu.footer
@@ -8,9 +8,9 @@ dependencies:
     - system
   theme:
     - pts
-id: voet
+id: voet_2
 theme: pts
-region: contactoverlay
+region: footermenu
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

@@ -10,7 +10,7 @@
   &__contact {
 
     &--mobile {
-      @include mq(tablet) {
+      @include mq(desktop) {
         display: none;
       }
     }
@@ -29,13 +29,13 @@
     display: none;
     padding-top: 2rem;
 
-    @include mq(tablet) {
+    @include mq(desktop) {
       display: block;
     }
 
     &--mobile {
 
-      @include mq(tablet) {
+      @include mq(desktop) {
         display: none;
       }
 

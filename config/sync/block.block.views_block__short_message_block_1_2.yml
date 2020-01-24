@@ -1,6 +1,6 @@
 uuid: 601c21d0-0a5b-43ae-9102-04f6bf285b29
 langcode: nl
-status: true
+status: false
 dependencies:
   config:
     - views.view.short_message
@@ -10,7 +10,7 @@ dependencies:
     - pts
 id: views_block__short_message_block_1_2
 theme: pts
-region: shortmessage
+region: contactoverlay
 weight: 0
 provider: null
 plugin: 'views_block:short_message-block_1'

@@ -237,7 +237,7 @@ strong {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media screen and (min-width: 37.5em) {
+  @media screen and (min-width: 62.5em) {
     .r-header__contact--mobile {
       display: none; } }
   .r-header__logo-img {
@@ -247,10 +247,10 @@ strong {
   .r-header__menu {
     display: none;
     padding-top: 2rem; }
-    @media screen and (min-width: 37.5em) {
+    @media screen and (min-width: 62.5em) {
       .r-header__menu {
         display: block; } }
-    @media screen and (min-width: 37.5em) {
+    @media screen and (min-width: 62.5em) {
       .r-header__menu--mobile {
         display: none; } }
 
@@ -466,6 +466,7 @@ strong {
 
 .c-main-menu__item {
   margin-left: 0;
+  margin-bottom: 2rem;
   font-size: 2rem; }
   .c-main-menu__item:not(:last-child) {
     padding-right: 1.5rem; }
@@ -477,7 +478,7 @@ strong {
   text-decoration: none;
   color: #0a100d; }
   .c-main-menu__link:hover {
-    color: #8f9491; }
+    border-bottom: 1px solid #0a100d; }
 
 .c-close-btn {
   position: relative;
