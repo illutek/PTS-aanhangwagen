@@ -548,9 +548,9 @@ strong {
   display: block;
   width: 0;
   height: 1px;
-  background: #f7f7f2;
   -webkit-transition: width .3s;
-  transition: width .3s; }
+  transition: width .3s;
+  background: #f7f7f2; }
 
 .c-readmore--white .c-readmore__link a {
   color: #f7f7f2; }
@@ -560,9 +560,9 @@ strong {
   display: block;
   width: 0;
   height: 1px;
-  background: #0a100d;
   -webkit-transition: width .3s;
-  transition: width .3s; }
+  transition: width .3s;
+  background: #0a100d; }
 
 .c-readmore--black .c-readmore__link a {
   color: #0a100d; }

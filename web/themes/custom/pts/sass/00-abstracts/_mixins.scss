@@ -63,3 +63,11 @@ $breakpoints: (
   background: rgba($dark-gray, .95);
   transition: all 0.9s;
 }
+
+@mixin readmore-link-after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  transition: width .3s;
+}

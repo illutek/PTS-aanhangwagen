@@ -2,42 +2,6 @@
 // @@ READMORE
 // ////////////////////////
 
-// .c-readmore {
-
-//     a {
-//         text-decoration: none;
-//     }       
-
-//     &--white {
-//         a {
-//             color: $white;
-
-//             &:hover {
-//                 border-bottom: 1px solid $white;
-//             }
-//         }
-//     }
-
-//     &--black {
-//         a {
-//             color: $black;
-        
-//             &:hover {
-//                 border-bottom: 1px solid $black;
-//             }
-//         }
-
-//     }
-
-//     &__links {
-//         list-style: none;
-//     }
-
-//     &__link {
-//         margin-left: 0;
-//     }
-// }
-
 .c-readmore {
 
     .c-readmore__link {
@@ -57,48 +21,35 @@
         }
     }
 
-
     &--white {
 
         .c-readmore__link {
 
             &::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 1px;
+                @include readmore-link-after ();
                 background: $white;
-                transition: width .3s;
             }
 
             a {
                 color: $white;
             }
             
-            
-            
         }
     }
-        
 
     &--black {
 
         .c-readmore__link {
 
             &::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 1px;
+                @include readmore-link-after ();
                 background: $black;
-                transition: width .3s;
             }
 
             a {
                 color: $black;
             }
         }
-
         
     }
 }
