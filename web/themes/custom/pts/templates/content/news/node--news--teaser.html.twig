@@ -29,13 +29,11 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
+  <h2 class="c-readmore c-readmore--white" {{ title_attributes }}>
+    <div class="c-readmore__link">
       <a href="{{ url }}">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    </div>
+  </h2>
 
   <div class="r-info__img c-image c-image--left">
     {{ content.field_news_img }}

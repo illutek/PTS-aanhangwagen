@@ -2,38 +2,103 @@
 // @@ READMORE
 // ////////////////////////
 
+// .c-readmore {
+
+//     a {
+//         text-decoration: none;
+//     }       
+
+//     &--white {
+//         a {
+//             color: $white;
+
+//             &:hover {
+//                 border-bottom: 1px solid $white;
+//             }
+//         }
+//     }
+
+//     &--black {
+//         a {
+//             color: $black;
+        
+//             &:hover {
+//                 border-bottom: 1px solid $black;
+//             }
+//         }
+
+//     }
+
+//     &__links {
+//         list-style: none;
+//     }
+
+//     &__link {
+//         margin-left: 0;
+//     }
+// }
+
 .c-readmore {
 
-    a {
-        text-decoration: none;
-    }       
+    .c-readmore__link {
+        margin-left: 0;
+        // margin-bottom: 3rem;
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+                transition: width .3s;
+            }
+        }
+    }
+
 
     &--white {
-        a {
-            color: $white;
 
-            &:hover {
-                border-bottom: 1px solid $white;
+        .c-readmore__link {
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background: $white;
+                transition: width .3s;
             }
+
+            a {
+                color: $white;
+            }
+            
+            
+            
         }
     }
+        
 
     &--black {
-        a {
-            color: $black;
-        
-            &:hover {
-                border-bottom: 1px solid $black;
+
+        .c-readmore__link {
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background: $black;
+                transition: width .3s;
+            }
+
+            a {
+                color: $black;
             }
         }
 
-    }
-
-    &__links {
-        list-style: none;
-    }
-
-    &__link {
-        margin-left: 0;
+        
     }
 }
