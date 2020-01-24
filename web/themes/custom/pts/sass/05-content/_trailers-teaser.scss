@@ -29,11 +29,23 @@
  
 }
 
-// Node teaser, &--accent lives in 'node--extra--teaser.html.twig'
+// Node teaser, &--accent lives in 'node--trailer--extra-teaser.html.twig'
 
 .trailer-model {
+  $root: &;
+
   position: relative;
   margin-bottom: $margin-b;
+
+  &:hover {
+      #{$root}__caption {
+        background-color: rgba($dark-gray, 1.0);
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
 
   @include mq(tablet) {
       flex-grow: 1;
@@ -47,8 +59,12 @@
       left: 0;
       right: 0;
       bottom: 0;
-      padding: 1rem 2rem;
-      background-color: rgba($dark-gray, .7);
+      padding: 1rem 2rem;      
+      transition: all 0.9s;
+
+      &--gray {
+        background-color: rgba($dark-gray, .7);
+      }
 
       &--accent {
         background-color: rgba($accent, .8);

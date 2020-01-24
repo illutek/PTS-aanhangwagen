@@ -664,6 +664,18 @@ strong {
 .trailer-model {
   position: relative;
   margin-bottom: 3rem; }
+  .trailer-model:hover .trailer-model__caption {
+    background-color: #8f9491;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   @media screen and (min-width: 37.5em) {
     .trailer-model {
       -webkit-box-flex: 1;
@@ -676,7 +688,10 @@ strong {
     right: 0;
     bottom: 0;
     padding: 1rem 2rem;
-    background-color: rgba(143, 148, 145, 0.7); }
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s; }
+    .trailer-model__caption--gray {
+      background-color: rgba(143, 148, 145, 0.7); }
     .trailer-model__caption--accent {
       background-color: rgba(232, 73, 47, 0.8); }
 
