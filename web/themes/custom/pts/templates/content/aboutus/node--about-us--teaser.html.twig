@@ -17,7 +17,7 @@
 {%
   set classes = [
     'node',
-    'node-teaser-aboutus',
+    'n-aboutus-teaser',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -34,12 +34,11 @@
     </div>
   </h2>
 
-
   <div class="c-image c-image--right">
     {{ content.field_aboutus_img }}
   </div>
 
-  <div{{ content_attributes.addClass('node-teaser-aboutus__content') }}>
+  <div{{ content_attributes.addClass('n-aboutus-teaser__content') }}>
     <p>{{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}</p>
   </div>
 
@@ -47,6 +46,7 @@
   
   <div class="c-readmore c-readmore--white u-list-item-right">
     {% if bodytext|length > textlenght %}
+    {# this to show only the read more link (for translation) #}
       {{ content|without('body')|without('field_aboutus_img') }}
     {% endif %}
   </div>

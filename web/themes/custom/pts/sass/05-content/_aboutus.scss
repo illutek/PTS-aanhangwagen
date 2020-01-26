@@ -1,0 +1,30 @@
+// /////////////////////////
+// @@ ABOUT US
+// ////////////////////////
+
+// x node--about-us--teaser.html.twig
+// x node--about-us--full.html.twig
+
+.n-aboutus {
+
+    &-teaser {
+
+        &__content {}
+    }
+
+    &-full {
+
+        &__content {
+            @include para-t-img();
+        }
+
+        &__body {
+            order: 0;
+        }
+    
+        &__img {
+            order: 1;
+        }
+
+    }
+}

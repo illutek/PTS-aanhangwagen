@@ -727,7 +727,7 @@ strong {
       .para-subtrailer__images-item:not(:last-child) {
         margin-bottom: 0; } }
 
-.node-aboutus__content {
+.n-aboutus-full__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -740,15 +740,15 @@ strong {
   border-bottom: 1px rgba(225, 230, 225, 0.4) solid;
   width: 100%; }
   @media screen and (min-width: 37.5em) {
-    .node-aboutus__content {
+    .n-aboutus-full__content {
       display: inline-block; } }
 
-.node-aboutus__body {
+.n-aboutus-full__body {
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 0;
   order: 0; }
 
-.node-aboutus__img {
+.n-aboutus-full__img {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1; }

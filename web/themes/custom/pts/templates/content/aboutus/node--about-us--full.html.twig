@@ -12,7 +12,7 @@
 {%
   set classes = [
     'node',
-    'node-aboutus',
+    'n-aboutus-full',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -31,13 +31,13 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass('node-aboutus__content') }}>
+  <div{{ content_attributes.addClass('n-aboutus-full__content') }}>
 
-    <div class="node-aboutus__img c-image c-image--left">
+    <div class="n-aboutus-full__img c-image c-image--left">
       {{ content.field_aboutus_img }}
     </div>
     
-    <div class="node-aboutus__body">
+    <div class="n-aboutus-full__body">
       {{ content.body }}
     </div>
     
