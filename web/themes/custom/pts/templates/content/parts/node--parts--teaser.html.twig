@@ -18,7 +18,7 @@
 {%
   set classes = [
     'node',
-    'node-teaser-parts',
+    'n-parts-teaser',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -35,7 +35,7 @@
     </div>
   </h2>
 
-  <div{{ content_attributes.addClass('node__content') }}>
+  <div{{ content_attributes.addClass('n-parts-teaser__body node__content') }}>
     <p>
        {{ bodytext|length > textlenght ? bodytext|slice(0, textlenght) ~ '...' : bodytext }}
     </p>

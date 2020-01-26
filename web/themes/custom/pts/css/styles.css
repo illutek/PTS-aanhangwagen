@@ -795,11 +795,10 @@ strong {
     .para-t-img-r__wrap {
       display: inline-block; } }
 
-.node-teaser-parts {
-  color: #0a100d;
-  text-decoration: none; }
+.n-parts-teaser {
+  color: #0a100d; }
 
-.node-full-parts__content-wrap {
+.n-parts-full__content-wrap {
   margin-bottom: 3rem; }
 
 .paragraph-video {

@@ -14,7 +14,7 @@
 {%
   set classes = [
     'node',
-    'node-full-parts',
+    'n-parts-full',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -33,14 +33,14 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div class="node-full-parts__content-wrap">
+  <div class="n-parts-full__content-wrap">
 
   {# class image-left to a component #}
     <div class="c-image c-image--left">
         {{ content.field_parts_img }}
     </div>
   
-    <div{{ content_attributes.addClass('node-full-parts__content') }}>
+    <div{{ content_attributes.addClass('node-parts-full__content') }}>
         {{ content.body }}
     </div>
 

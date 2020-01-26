@@ -1,0 +1,23 @@
+// ////////////////////////////
+// @@ PARTS TEASER AND FULL
+// ////////////////////////////
+
+// x node--parts--teaser.html.twig
+// x node--parts--full.html.twig
+
+.n-parts {
+
+    &-teaser {
+        color: $clr-parts;
+    }
+
+    &-full {
+
+        &__content-wrap {
+            margin-bottom: $margin-b;
+        }
+    
+        &__content {}
+
+    }
+}
