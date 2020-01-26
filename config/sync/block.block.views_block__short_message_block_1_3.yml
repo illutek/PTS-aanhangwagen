@@ -1,0 +1,24 @@
+uuid: 7406bf28-4810-4532-b8c9-17c4dbc34487
+langcode: nl
+status: true
+dependencies:
+  config:
+    - views.view.short_message
+  module:
+    - views
+  theme:
+    - pts
+id: views_block__short_message_block_1_3
+theme: pts
+region: shortmessage
+weight: 0
+provider: null
+plugin: 'views_block:short_message-block_1'
+settings:
+  id: 'views_block:short_message-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }
