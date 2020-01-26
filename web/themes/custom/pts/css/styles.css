@@ -665,7 +665,6 @@ strong {
   position: relative;
   margin-bottom: 3rem; }
   .trailer-model:hover .trailer-model__caption {
-    background-color: #8f9491;
     top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -676,6 +675,10 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  .trailer-model:hover .trailer-model__caption--gray {
+    background-color: #8f9491; }
+  .trailer-model:hover .trailer-model__caption--accent {
+    background-color: #e8492f; }
   @media screen and (min-width: 37.5em) {
     .trailer-model {
       -webkit-box-flex: 1;

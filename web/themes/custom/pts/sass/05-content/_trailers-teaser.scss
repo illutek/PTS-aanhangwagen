@@ -3,6 +3,10 @@
 // //////////////////////////////
 
 // The front trailer-teaser block highlighted block 
+// views-view--trailers-teaser.html.twig
+// views-view--trailers-teaser-page.html.twig
+// views-view-unformatted--trailers-teaser.html.twig
+// views-view-unformatted--trailers-teaser-page.html.twig
 
 .trailer-models {
   display: flex;
@@ -20,7 +24,6 @@
   }
 
   &__views-row {
-
     @include mq(tablet) {
       margin: 1rem;
       width: 31%;
@@ -29,7 +32,8 @@
  
 }
 
-// Node teaser, &--accent lives in 'node--trailer--extra-teaser.html.twig'
+// node--trailer-teaser.html.twig 
+// node--trailer--extra-teaser.html.twig
 
 .trailer-model {
   $root: &;
@@ -38,36 +42,47 @@
   margin-bottom: $margin-b;
 
   &:hover {
-      #{$root}__caption {
-        background-color: rgba($dark-gray, 1.0);
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    #{$root}__caption {
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &:hover {
+    #{$root}__caption--gray {
+      background-color: rgba($dark-gray, 1.0);
+    }
+  }
+  
+  &:hover {
+    #{$root}__caption--accent {
+      background-color: rgba($accent, 1.0);
     }
   }
 
   @include mq(tablet) {
-      flex-grow: 1;
-      max-width: 95%;
+    flex-grow: 1;
+    max-width: 95%;
   }
 
   &__img {}
 
   &__caption {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      padding: 1rem 2rem;      
-      transition: all 0.9s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem 2rem;      
+    transition: all 0.9s;
 
-      &--gray {
-        background-color: rgba($dark-gray, .7);
-      }
+    &--gray {
+      background-color: rgba($dark-gray, .7);
+    }
 
-      &--accent {
-        background-color: rgba($accent, .8);
-      }
+    &--accent {
+      background-color: rgba($accent, .8);
+    }
   }
 }
