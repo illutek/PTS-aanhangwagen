@@ -14,7 +14,7 @@
 {%
   set classes = [
     'node',
-    'node-more-trailers',
+    'n-more-trailers',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -25,7 +25,7 @@
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
 
-  <div{{ content_attributes.addClass('node-more-trailers__content') }}>
+  <div{{ content_attributes.addClass('n-more-trailers__content') }}>
     {{ content.body }}
   </div>
 

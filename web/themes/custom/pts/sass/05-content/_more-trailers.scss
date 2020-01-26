@@ -5,7 +5,7 @@
 // This block view is shown below the trailers on the home page (extra-teaser}.
 // node--info--ectra-teaser.html.twig
 
-.node-more-trailers {
+.n-more-trailers {
     background-color: $accent;
     margin-bottom: $margin-b;
     padding: 1.5rem 0;
@@ -16,9 +16,9 @@
     &__content {
         text-align: center;
 
-         a {
-        color: $white;
-        text-decoration: none;
+        a {
+            color: $white;
+            text-decoration: none;
         }
         p {
             margin-bottom: 0;

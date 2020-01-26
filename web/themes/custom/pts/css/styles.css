@@ -852,17 +852,17 @@ strong {
         height: auto;
         margin: 1rem; } }
 
-.node-more-trailers {
+.n-more-trailers {
   background-color: #e8492f;
   margin-bottom: 3rem;
   padding: 1.5rem 0;
   font-size: 2rem; }
-  .node-more-trailers__content {
+  .n-more-trailers__content {
     text-align: center; }
-    .node-more-trailers__content a {
+    .n-more-trailers__content a {
       color: #f7f7f2;
       text-decoration: none; }
-    .node-more-trailers__content p {
+    .n-more-trailers__content p {
       margin-bottom: 0; }
 
 .n-short-message {
