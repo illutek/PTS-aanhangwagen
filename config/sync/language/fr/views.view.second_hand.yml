@@ -1,0 +1,9 @@
+label: Occasion
+display:
+  default:
+    display_options:
+      title: Occasion
+  page_1:
+    display_options:
+      menu:
+        title: Occasion
