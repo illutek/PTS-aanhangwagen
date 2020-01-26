@@ -865,11 +865,11 @@ strong {
     .node-more-trailers__content p {
       margin-bottom: 0; }
 
-.node-short-message {
+.n-short-message {
   background-color: #e1e6e1;
   padding: 4rem;
   margin-bottom: 3rem; }
-  .node-short-message__content {
+  .n-short-message__content {
     color: #0a100d; }
 
 .n-secondhand__inner {

@@ -13,7 +13,7 @@
 {%
   set classes = [
     'node',
-    'node-short-message',
+    'n-short-message',
     'node--type-' ~ node.bundle|clean_class,
     node.isPromoted() ? 'node--promoted',
     node.isSticky() ? 'node--sticky',
@@ -32,7 +32,7 @@
   {% endif %}
   {{ title_suffix }}
 
-  <div{{ content_attributes.addClass('node-short-messag__content') }}>
+  <div{{ content_attributes.addClass('n-short-message__content') }}>
     {{ content }}
   </div>
 
