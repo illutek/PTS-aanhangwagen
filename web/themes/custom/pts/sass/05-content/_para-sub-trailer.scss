@@ -2,30 +2,30 @@
 // @@ PARAGRAPH SUB-TRAILER 
 // /////////////////////////////
 
+// Used in templates
+// x paragraph--sub-trailer.html.twig
+// x field--field-para-sub-trailer.html.twig
+// x field--field-para-sub-trailer-img.html.twig
+
+
 .para-subtrailer {
     padding: 2rem;
     border: 2px solid $gray;
 
-    // paragraph field on content-type level
+    &__images {}
+
+    // x field--field-para-sub-trailer.html.twig
     &__item {
         &:not(:last-child){
             margin-bottom: $margin-b;
         }
     }
 
-
-    // paragraph fields
-    &__images {}
-
-
-
-
+    // x field--field-para-sub-trailer-img.html.twig
     &__images-items {
-
         @include mq(tablet){
             @include paragraph-items();
         }
-        
     }
 
     &__images-item {

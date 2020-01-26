@@ -1,12 +1,16 @@
 // /////////////////////////
-// @@ TRAILER FULL content
+// @@ TRAILER FULL CONTENT
 // ////////////////////////
 
-.node-trailer {
+// x node--trailers--full.html.twig
+
+.n-trailer-full {
     &__content {}
 
     &__body {
         margin-bottom: $margin-b;
     }
+
+    &__paragraph {}
 
 }
