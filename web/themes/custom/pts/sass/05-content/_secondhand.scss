@@ -1,0 +1,76 @@
+// /////////////////////////
+// @@ SECONDHAND
+// ////////////////////////
+
+// Used templates
+// * node--second-hand--full.html.twig
+// * field--field-secondhand-img.html.twig
+// * views-view--second-hand.html.twig
+// * views-view-unformatted--second-hand.html.twig
+
+.n-secondhand {
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(tablet) {
+            flex-direction: row;
+        }
+    }
+  
+    &__body {
+        order: 1;
+
+        @include mq(tablet) {
+            margin-left: 3rem;
+            order: 2;
+        }
+    }
+
+    &__images {
+        order: 2;
+
+        @include mq(tablet) {
+            order: 1;
+        }
+    }
+
+    // the images
+    &__field-items {
+        display: flex;
+        flex-direction: column;
+
+        @include mq(desktop) {
+            flex-direction: row;
+        }
+    }
+
+    &__field-item {
+        &:not(:last-child) {
+            margin-bottom: $margin-b;
+        }
+
+        @include mq(desktop) {
+            &:not(:last-child) {
+                margin-right: $margin-b;
+            }
+        }
+    }
+
+    // views-view--second-hand.html.twig
+    &__view-content {
+
+    }
+
+    // views-view-unformatted--second-hand.html.twig
+    &__views-row {
+        &:not(:last-child) {
+            margin-bottom: $margin-b;
+            border-bottom: 1px solid $dark-gray;
+            padding-bottom: 3rem;
+  
+        }
+    }
+
+}
