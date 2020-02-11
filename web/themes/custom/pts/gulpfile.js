@@ -1,145 +1,75 @@
-/**
- * Created by stefan on 05.01.2019.
- * 
- *
- */
+// Created by stefan on 30-01-2020
+// Initialize modules
+// Importing specific gulp API functions lets us write them below as series() instead of gulp.series()
+const { src, dest, watch, series, parallel } = require('gulp');
+// Importing all the Gulp-related packages we want to use
+const sourcemaps = require('gulp-sourcemaps'),
+      sass = require('gulp-sass'),
+      concat = require('gulp-concat'),
+      uglify = require('gulp-uglify'),
+      postcss = require('gulp-postcss'),
+      autoprefixer = require('autoprefixer'),
+      cssnano = require('cssnano'),
+      lineec  = require('gulp-line-ending-corrector'),
+      imagemin = require('gulp-imagemin'),
+      changed = require('gulp-changed'),
+      prettyError = require('gulp-prettyerror')
 
-/* jshint node: true */
-"use strict";
+// File paths
+const files = {
+    scssPath: 'sass/**/*.scss',
+    jsPath: 'js/**/*.js',
+    imgPath: 'images/**/*.*'
+}
 
-const gulp = require("gulp"),
-  prettyError = require("gulp-prettyerror"),
-  watch = require("gulp-watch"),
-  prefixer = require("gulp-autoprefixer"),
-  uglify = require("gulp-uglify"),
-  del = require("del"),
-  sass = require("gulp-sass"),
-  sourcemaps = require("gulp-sourcemaps"),
-  cleancss = require("gulp-clean-css"),
-  imagemin = require("gulp-imagemin"),
-  runSequence = require('run-sequence'),
-  babel = require("gulp-babel");
+// Dist paths
+const distPath = {
+    cssDist: 'dist/css',
+    jsDist: 'dist/js'
+}
 
-/**
- * Variables
- *
- */
-const path = {
-  dist: {
-    css: "css/",
-    img: "images/"
-  },
-  src: {
-    js: "js/**/*.js",
-    style: "sass/styles.scss",
-    img: "images/**/*.*",
-    fonts: "fonts/**/*.*",
-    png: "*.png"
-  },
-  watch: {
-    style: "sass/**/*.scss"
-  }
-};
+// Sass task: compiles the style.scss file into style.css
+function scssTask(){    
+    return src(files.scssPath)
+        .pipe(prettyError())
+        .pipe(sourcemaps.init()) // initialize sourcemaps first
+        .pipe(sass()) // compile SCSS to CSS
+        .pipe(dest('css')) // css no prefix or minify
+        .pipe(postcss([ autoprefixer(), cssnano() ])) // PostCSS plugins
+        .pipe(sourcemaps.write('.')) // write sourcemaps file in current directory
+        .pipe(lineec()) // line ending corrector
+        .pipe(dest(distPath.cssDist) // put final CSS in dist folder
+    ); 
+}
 
+// JS Task
+function jsTask() {
+    return src(files.jsPath)
+        .pipe(concat('all.js'))
+        .pipe(uglify())
+        .pipe(lineec()) // line ending corrector
+        .pipe(dest('dist/js')
+    );
+}
 
+// Images minify task
+function imgTask() {
+    return src(files.imgPath)
+        .pipe(changed('dist/images'))
+        .pipe(imagemin(
+            imagemin({progressive: true, optimizationLevel: 5})
+        ))
+        .pipe(dest('dist/images'));
+}
 
-/**
- * task
- *
- */
+// Watch task
+function watchTask() {
+    watch([files.scssPath, files.jsPath, files.imgPath],
+      parallel(scssTask, jsTask, imgTask));
+}
 
-
-gulp.task("js:dist", function() {
-  gulp
-    .src(path.src.js)
-    .pipe(prettyError())
-    .pipe(sourcemaps.init())
-    .pipe(
-      babel({
-        presets: ["es2015"]
-      })
-    )
-    .pipe(uglify())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(path.dist.js));
-});
-
-gulp.task("style:dist", function() {
-  gulp
-    .src(path.src.style)
-    .pipe(sass())
-    .pipe(
-      prefixer({
-        browsers: ["last 2 versions"],
-        cascade: false
-      })
-    )
-    .pipe(cleancss({ compatibility: "ie9" }))
-    .pipe(gulp.dest(path.dist.css));
-});
-
-gulp.task("img:dist", function() {
-  gulp
-    .src(path.src.img)
-    .pipe(imagemin([
-      imagemin.optipng({optimizationLevel: 5})
-    ]))
-    .pipe(gulp.dest(path.dist.img));
-});
-
-
-gulp.task("dist", [
-  "js:dist",
-  "style:dist",
-  "img:dist"
-]);
-
-/**
- * deploy
- * 
- * Gulp 4
- * gulp.task('deploy', gulp.series('clean', 'dist'));
- * 
- * For now with gulp 3 used run-sequence
- */
-// 
-
-gulp.task('deploy', function(done) {
-  runSequence('dist', function() {
-    done();
-  });
-});
-
-/**
- * sass task
- *
- */
-
-gulp.task("style:sass", function() {
-  gulp
-    .src(path.src.style)
-    .pipe(prettyError())
-    .pipe(sourcemaps.init())
-    .pipe(
-      sass({
-        sourceMap: true,
-        errLogToConsole: true
-      })
-    )
-    .pipe(
-      prefixer({
-        browsers: ["last 2 versions"],
-        cascade: false
-      })
-    )
-    .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("css"));
-});
-
-gulp.task("watch", function() {
-    watch([path.watch.style], function(event, cb) {
-      gulp.start("style:sass");
-    });
-  });
-  
-  gulp.task("default", ["style:sass", "watch"]);
+// Default task
+exports.default = series(
+    parallel(scssTask, jsTask, imgTask),
+    watchTask
+);
