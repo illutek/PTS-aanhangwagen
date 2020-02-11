@@ -6,10 +6,10 @@
 (function () {
     'use strict';
   
-    const openBtn = document.querySelector('.c-hamburger-btn');    
-    const closeBtn = document.querySelector('.js-close-menu');    
-    const menuOverlay = document.querySelector('.r-menu-overlay');    
-    const openmenu = document.querySelector('.r-menu-overlay');
+    var openBtn = document.querySelector('.c-hamburger-btn');    
+    var closeBtn = document.querySelector('.js-close-menu');    
+    var menuOverlay = document.querySelector('.r-menu-overlay');    
+    var openmenu = document.querySelector('.r-menu-overlay');
   
     // console.log(contactOverlay);
   
@@ -27,6 +27,6 @@
  
     openBtn.addEventListener('click', openMenu);  
     closeBtn.addEventListener('click', closeMenu);    
-    openmenu.addEventListener('click', () => setTimeout(closeMenu, 500));
+    // openmenu.addEventListener('click', () => setTimeout(closeMenu, 500));
   
-  })();
+  }());

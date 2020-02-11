@@ -1,6 +1,7 @@
 {# 
 /**
 * only Visible on mobile on page-front and page
+* content-type info
 * 
 */
   #}
@@ -15,8 +16,13 @@
     <div class="r-overlay-contact__body">
       {# block-region content-type info #}
         {{ page.contactoverlay}}
-        {# not in a content type because of extra security, also does not need to be translated #}
-        <script>mail("info","pts",0,"","")</script>
+
+        <div class="c-email-protecting">
+          {# not as field in content-type "info" because of extra security, 
+          also does not need to be translated #}
+            <a href="{{ 'eb.stp@ofni:otliam'|reverse }}" >{{ 'eb.stp@ofni'|reverse }}</a>
+        </div>
+        
     </div>
 
   </div>

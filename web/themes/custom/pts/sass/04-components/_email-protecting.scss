@@ -1,0 +1,19 @@
+// //////////////////////////////
+// @@ E-MAIL PROTECTING 
+// //////////////////////////////
+
+.c-email-protecting {
+  a {
+
+    &:link,
+    &:visited,
+    &:active {
+      color: $white;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+    
+  }
+}
