@@ -1,8 +1,4 @@
 ## PTS aanhangwagenbouw
-To convert these work files to a Drupal8 theme, perform the following steps
+Gulp4 and node -v12
 
-1. clone the repo
-2. run npm install
-3. run gulp deploy
-
-All this creates the files necessary for a Drupal8 theme.
+minify css, imagemin images and concat js files all to dist directory
